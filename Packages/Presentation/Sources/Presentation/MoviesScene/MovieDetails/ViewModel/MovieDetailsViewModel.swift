@@ -19,8 +19,7 @@ final class DefaultMovieDetailsViewModel: MovieDetailsViewModel {
     
     private let posterImagePath: String?
     private let posterImagesRepository: PosterImagesRepository
-    private var imageLoadTask: Cancellable? { willSet { imageLoadTask?.cancel() } }
-    private let mainQueue: DispatchQueueType
+    private var imageLoadTask: Task<Void, Never>?
 
     // MARK: - OUTPUT
     let title: String
@@ -30,15 +29,13 @@ final class DefaultMovieDetailsViewModel: MovieDetailsViewModel {
     
     init(
         movie: Movie,
-        posterImagesRepository: PosterImagesRepository,
-        mainQueue: DispatchQueueType = DispatchQueue.main
+        posterImagesRepository: PosterImagesRepository
     ) {
         self.title = movie.title ?? ""
         self.overview = movie.overview ?? ""
         self.posterImagePath = movie.posterPath
         self.isPosterImageHidden = movie.posterPath == nil
         self.posterImagesRepository = posterImagesRepository
-        self.mainQueue = mainQueue
     }
 }
 
@@ -48,18 +45,19 @@ extension DefaultMovieDetailsViewModel {
     func updatePosterImage(width: Int) {
         guard let posterImagePath = posterImagePath else { return }
 
-        imageLoadTask = posterImagesRepository.fetchImage(
-            with: posterImagePath,
-            width: width
-        ) { [weak self] result in
-            self?.mainQueue.async {
-                guard self?.posterImagePath == posterImagePath else { return }
-                switch result {
-                case .success(let data):
+        imageLoadTask?.cancel()
+        imageLoadTask = Task {
+            do {
+                let data = try await posterImagesRepository.fetchImage(
+                    with: posterImagePath,
+                    width: width
+                )
+                await MainActor.run { [weak self] in
+                    guard self?.posterImagePath == posterImagePath else { return }
                     self?.posterImage.value = data
-                case .failure: break
                 }
-                self?.imageLoadTask = nil
+            } catch {
+                // Silently fail on image loading
             }
         }
     }

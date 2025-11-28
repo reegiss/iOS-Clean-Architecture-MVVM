@@ -9,16 +9,13 @@ public final class DefaultMoviesRepository {
 
     private let dataTransferService: DataTransferService
     private let cache: MoviesResponseStorage
-    private let backgroundQueue: DataTransferDispatchQueue
 
     init(
         dataTransferService: DataTransferService,
-        cache: MoviesResponseStorage,
-        backgroundQueue: DataTransferDispatchQueue = DispatchQueue.global(qos: .userInitiated)
+        cache: MoviesResponseStorage
     ) {
         self.dataTransferService = dataTransferService
         self.cache = cache
-        self.backgroundQueue = backgroundQueue
     }
 }
 
@@ -26,36 +23,46 @@ extension DefaultMoviesRepository: MoviesRepository {
     
     public func fetchMoviesList(
         query: MovieQuery,
-        page: Int,
-        cached: @escaping (MoviesPage) -> Void,
-        completion: @escaping (Result<MoviesPage, Error>) -> Void
-    ) -> Cancellable? {
-
+        page: Int
+    ) async throws -> MoviesPage {
         let requestDTO = MoviesRequestDTO(query: query.query, page: page)
-        let task = RepositoryTask()
-
-        cache.getResponse(for: requestDTO) { [weak self, backgroundQueue] result in
-
-            if case let .success(responseDTO?) = result {
-                cached(responseDTO.toDomain())
-            }
-            guard !task.isCancelled else { return }
-
-            let endpoint = APIEndpoints.getMovies(with: requestDTO)
-            task.networkTask = self?.dataTransferService.request(
-                with: endpoint,
-                on: backgroundQueue
-            ) { result in
+        
+        // Try to get cached response first
+        let cachedResponse = await getFromCache(for: requestDTO)
+        if let cachedResponse = cachedResponse {
+            return cachedResponse.toDomain()
+        }
+        
+        // Fetch from network
+        let endpoint = APIEndpoints.getMovies(with: requestDTO)
+        let responseDTO: MoviesResponseDTO = try await dataTransferService.request(with: endpoint)
+        
+        // Cache the response
+        await saveToCache(response: responseDTO, for: requestDTO)
+        
+        return responseDTO.toDomain()
+    }
+    
+    // MARK: - Private
+    private func getFromCache(for request: MoviesRequestDTO) async -> MoviesResponseDTO? {
+        return await withCheckedContinuation { continuation in
+            cache.getResponse(for: request) { result in
                 switch result {
-                case .success(let responseDTO):
-                    self?.cache.save(response: responseDTO, for: requestDTO)
-                    completion(.success(responseDTO.toDomain()))
-                case .failure(let error):
-                    completion(.failure(error))
+                case .success(let response):
+                    continuation.resume(returning: response)
+                case .failure:
+                    continuation.resume(returning: nil)
                 }
             }
         }
-        return task
+    }
+    
+    private func saveToCache(response: MoviesResponseDTO, for request: MoviesRequestDTO) async {
+        await withCheckedContinuation { (continuation: CheckedContinuation<Void, Never>) in
+            // storage.save is synchronous in current implementations, so resume immediately
+            cache.save(response: response, for: request)
+            continuation.resume()
+        }
     }
 }
 

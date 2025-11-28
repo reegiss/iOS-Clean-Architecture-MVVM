@@ -2,11 +2,7 @@ import Foundation
 import Common
 
 public protocol SearchMoviesUseCase {
-    func execute(
-        requestValue: SearchMoviesUseCaseRequestValue,
-        cached: @escaping (MoviesPage) -> Void,
-        completion: @escaping (Result<MoviesPage, Error>) -> Void
-    ) -> Cancellable?
+    func execute(requestValue: SearchMoviesUseCaseRequestValue) async throws -> MoviesPage
 }
 
 final class DefaultSearchMoviesUseCase: SearchMoviesUseCase {
@@ -22,21 +18,15 @@ final class DefaultSearchMoviesUseCase: SearchMoviesUseCase {
         self.moviesQueriesRepository = moviesQueriesRepository
     }
 
-    func execute(
-        requestValue: SearchMoviesUseCaseRequestValue,
-        cached: @escaping (MoviesPage) -> Void,
-        completion: @escaping (Result<MoviesPage, Error>) -> Void
-    ) -> Cancellable? {
-        return moviesRepository.fetchMoviesList(
+    func execute(requestValue: SearchMoviesUseCaseRequestValue) async throws -> MoviesPage {
+        let moviesPage = try await moviesRepository.fetchMoviesList(
             query: requestValue.query,
-            page: requestValue.page,
-            cached: cached,
-            completion: { result in
-                if case .success = result {
-                    self.moviesQueriesRepository.saveRecentQuery(query: requestValue.query) { _ in }
-                }
-                completion(result)
-            })
+            page: requestValue.page
+        )
+        
+        try await moviesQueriesRepository.saveRecentQuery(query: requestValue.query)
+        
+        return moviesPage
     }
 }
 

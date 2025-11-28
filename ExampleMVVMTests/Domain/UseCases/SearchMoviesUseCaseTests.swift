@@ -20,15 +20,14 @@ class SearchMoviesUseCaseTests: XCTestCase {
         var recentQueries: [MovieQuery] = []
         var fetchCompletionCallsCount = 0
         
-        func fetchRecentsQueries(
-            maxCount: Int,
-            completion: @escaping (Result<[MovieQuery], Error>) -> Void
-        ) {
-            completion(.success(recentQueries))
+        func fetchRecentsQueries(maxCount: Int) async throws -> [MovieQuery] {
             fetchCompletionCallsCount += 1
+            return recentQueries
         }
-        func saveRecentQuery(query: MovieQuery, completion: @escaping (Result<MovieQuery, Error>) -> Void) {
+        
+        func saveRecentQuery(query: MovieQuery) async throws -> MovieQuery {
             recentQueries.append(query)
+            return query
         }
     }
     
@@ -40,22 +39,19 @@ class SearchMoviesUseCaseTests: XCTestCase {
             self.result = result
         }
 
-        func fetchMoviesList(
-            query: MovieQuery,
-            page: Int,
-            cached: @escaping (MoviesPage) -> Void,
-            completion: @escaping (Result<MoviesPage, Error>
-            ) -> Void
-        ) -> Cancellable? {
-            completion(result)
+        func fetchMoviesList(query: MovieQuery, page: Int) async throws -> MoviesPage {
             fetchCompletionCallsCount += 1
-            return nil
+            switch result {
+            case .success(let page):
+                return page
+            case .failure(let error):
+                throw error
+            }
         }
     }
     
-    func testSearchMoviesUseCase_whenSuccessfullyFetchesMoviesForQuery_thenQueryIsSavedInRecentQueries() {
+    func testSearchMoviesUseCase_whenSuccessfullyFetchesMoviesForQuery_thenQueryIsSavedInRecentQueries() async {
         // given
-        var useCaseCompletionCallsCount = 0
         let moviesQueriesRepository = MoviesQueriesRepositoryMock()
         let moviesRepository = MoviesRepositoryMock(
             result: .success(SearchMoviesUseCaseTests.moviesPages[0])
@@ -70,43 +66,42 @@ class SearchMoviesUseCaseTests: XCTestCase {
             query: MovieQuery(query: "title1"),
             page: 0
         )
-        _ = useCase.execute(
-            requestValue: requestValue,
-            cached: { _ in }
-        ) { _ in
-            useCaseCompletionCallsCount += 1
+        
+        do {
+            _ = try await useCase.execute(requestValue: requestValue)
+            
+            // then
+            let recents = try await moviesQueriesRepository.fetchRecentsQueries(maxCount: 1)
+            XCTAssertTrue(recents.contains(MovieQuery(query: "title1")))
+            XCTAssertEqual(moviesQueriesRepository.fetchCompletionCallsCount, 1)
+            XCTAssertEqual(moviesRepository.fetchCompletionCallsCount, 1)
+        } catch {
+            XCTFail("Should not fail: \(error)")
         }
-        // then
-        var recents = [MovieQuery]()
-        moviesQueriesRepository.fetchRecentsQueries(maxCount: 1) { result in
-            recents = (try? result.get()) ?? []
-        }
-        XCTAssertTrue(recents.contains(MovieQuery(query: "title1")))
-        XCTAssertEqual(useCaseCompletionCallsCount, 1)
-        XCTAssertEqual(moviesQueriesRepository.fetchCompletionCallsCount, 1)
-        XCTAssertEqual(moviesRepository.fetchCompletionCallsCount, 1)
     }
     
-    func testSearchMoviesUseCase_whenFailedFetchingMoviesForQuery_thenQueryIsNotSavedInRecentQueries() {
+    func testSearchMoviesUseCase_whenFailedFetchingMoviesForQuery_thenQueryIsNotSavedInRecentQueries() async {
         // given
-        var useCaseCompletionCallsCountCount = 0
         let moviesQueriesRepository = MoviesQueriesRepositoryMock()
-        let useCase = DefaultSearchMoviesUseCase(moviesRepository: MoviesRepositoryMock(result: .failure(MoviesRepositorySuccessTestError.failedFetching)),
-                                                 moviesQueriesRepository: moviesQueriesRepository)
+        let useCase = DefaultSearchMoviesUseCase(
+            moviesRepository: MoviesRepositoryMock(result: .failure(MoviesRepositorySuccessTestError.failedFetching)),
+            moviesQueriesRepository: moviesQueriesRepository
+        )
         
         // when
-        let requestValue = SearchMoviesUseCaseRequestValue(query: MovieQuery(query: "title1"),
-                                                           page: 0)
-        _ = useCase.execute(requestValue: requestValue, cached: { _ in }) { _ in
-            useCaseCompletionCallsCountCount += 1
+        let requestValue = SearchMoviesUseCaseRequestValue(
+            query: MovieQuery(query: "title1"),
+            page: 0
+        )
+        
+        do {
+            _ = try await useCase.execute(requestValue: requestValue)
+            XCTFail("Should have thrown an error")
+        } catch {
+            // Expected error
+            let recents = try await moviesQueriesRepository.fetchRecentsQueries(maxCount: 1)
+            XCTAssertTrue(recents.isEmpty)
+            XCTAssertEqual(moviesQueriesRepository.fetchCompletionCallsCount, 1)
         }
-        // then
-        var recents = [MovieQuery]()
-        moviesQueriesRepository.fetchRecentsQueries(maxCount: 1) { result in
-            recents = (try? result.get()) ?? []
-        }
-        XCTAssertTrue(recents.isEmpty)
-        XCTAssertEqual(useCaseCompletionCallsCountCount, 1)
-        XCTAssertEqual(moviesQueriesRepository.fetchCompletionCallsCount, 1)
     }
 }

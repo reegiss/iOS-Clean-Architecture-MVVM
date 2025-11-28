@@ -18,23 +18,8 @@ extension NetworkError: ConnectionError {
     }
 }
 
-public protocol NetworkCancellable {
-    func cancel()
-}
-
-extension URLSessionTask: NetworkCancellable { }
-
 public protocol NetworkService {
-    typealias CompletionHandler = (Result<Data?, NetworkError>) -> Void
-    
-    func request(endpoint: Requestable, completion: @escaping CompletionHandler) -> NetworkCancellable?
-}
-
-public protocol NetworkSessionManager {
-    typealias CompletionHandler = (Data?, URLResponse?, Error?) -> Void
-    
-    func request(_ request: URLRequest,
-                 completion: @escaping CompletionHandler) -> NetworkCancellable
+    func request(endpoint: Requestable) async throws -> Data?
 }
 
 public protocol NetworkErrorLogger {
@@ -48,45 +33,14 @@ public protocol NetworkErrorLogger {
 final class DefaultNetworkService {
     
     private let config: NetworkConfigurable
-    private let sessionManager: NetworkSessionManager
     private let logger: NetworkErrorLogger
     
     init(
         config: NetworkConfigurable,
-        sessionManager: NetworkSessionManager = DefaultNetworkSessionManager(),
         logger: NetworkErrorLogger = DefaultNetworkErrorLogger()
     ) {
-        self.sessionManager = sessionManager
         self.config = config
         self.logger = logger
-    }
-    
-    private func request(
-        request: URLRequest,
-        completion: @escaping CompletionHandler
-    ) -> NetworkCancellable {
-        
-        let sessionDataTask = sessionManager.request(request) { data, response, requestError in
-            
-            if let requestError = requestError {
-                var error: NetworkError
-                if let response = response as? HTTPURLResponse {
-                    error = .error(statusCode: response.statusCode, data: data)
-                } else {
-                    error = self.resolve(error: requestError)
-                }
-                
-                self.logger.log(error: error)
-                completion(.failure(error))
-            } else {
-                self.logger.log(responseData: data, response: response)
-                completion(.success(data))
-            }
-        }
-    
-        logger.log(request: request)
-
-        return sessionDataTask
     }
     
     private func resolve(error: Error) -> NetworkError {
@@ -101,33 +55,31 @@ final class DefaultNetworkService {
 
 extension DefaultNetworkService: NetworkService {
     
-    func request(
-        endpoint: Requestable,
-        completion: @escaping CompletionHandler
-    ) -> NetworkCancellable? {
+    func request(endpoint: Requestable) async throws -> Data? {
         do {
             let urlRequest = try endpoint.urlRequest(with: config)
-            return request(request: urlRequest, completion: completion)
+            logger.log(request: urlRequest)
+            
+            let (data, response) = try await URLSession.shared.data(for: urlRequest)
+            
+            if let httpResponse = response as? HTTPURLResponse {
+                logger.log(responseData: data, response: response)
+                
+                guard (200..<300).contains(httpResponse.statusCode) else {
+                    let error = NetworkError.error(statusCode: httpResponse.statusCode, data: data)
+                    logger.log(error: error)
+                    throw error
+                }
+            }
+            
+            return data
+        } catch let error as NetworkError {
+            throw error
         } catch {
-            completion(.failure(.urlGeneration))
-            return nil
+            let networkError = resolve(error: error)
+            logger.log(error: networkError)
+            throw networkError
         }
-    }
-}
-
-// MARK: - Default Network Session Manager
-// Note: If authorization is needed NetworkSessionManager can be implemented by using,
-// for example, Alamofire SessionManager with its RequestAdapter and RequestRetrier.
-// And it can be injected into NetworkService instead of default one.
-
-final class DefaultNetworkSessionManager: NetworkSessionManager {
-    func request(
-        _ request: URLRequest,
-        completion: @escaping CompletionHandler
-    ) -> NetworkCancellable {
-        let task = URLSession.shared.dataTask(with: request, completionHandler: completion)
-        task.resume()
-        return task
     }
 }
 

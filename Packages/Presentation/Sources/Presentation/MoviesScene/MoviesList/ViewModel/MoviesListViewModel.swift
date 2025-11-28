@@ -58,8 +58,7 @@ final class DefaultMoviesListViewModel: MoviesListViewModel {
     var nextPage: Int { hasMorePages ? currentPage + 1 : currentPage }
 
     private var pages: [MoviesPage] = []
-    private var moviesLoadTask: Cancellable? { willSet { moviesLoadTask?.cancel() } }
-    private let mainQueue: DispatchQueueType
+    private var moviesLoadTask: Task<Void, Never>? { willSet { moviesLoadTask?.cancel() } }
 
     // MARK: - OUTPUT
 
@@ -77,12 +76,10 @@ final class DefaultMoviesListViewModel: MoviesListViewModel {
     
     init(
         searchMoviesUseCase: SearchMoviesUseCase,
-        actions: MoviesListViewModelActions? = nil,
-        mainQueue: DispatchQueueType = DispatchQueue.main
+        actions: MoviesListViewModelActions? = nil
     ) {
         self.searchMoviesUseCase = searchMoviesUseCase
         self.actions = actions
-        self.mainQueue = mainQueue
     }
 
     // MARK: - Private
@@ -109,24 +106,22 @@ final class DefaultMoviesListViewModel: MoviesListViewModel {
         self.loading.value = loading
         query.value = movieQuery.query
 
-        moviesLoadTask = searchMoviesUseCase.execute(
-            requestValue: .init(query: movieQuery, page: nextPage),
-            cached: { [weak self] page in
-                self?.mainQueue.async {
+        moviesLoadTask = Task {
+            do {
+                let page = try await searchMoviesUseCase.execute(
+                    requestValue: .init(query: movieQuery, page: nextPage)
+                )
+                await MainActor.run { [weak self] in
                     self?.appendPage(page)
-                }
-            },
-            completion: { [weak self] result in
-                self?.mainQueue.async {
-                    switch result {
-                    case .success(let page):
-                        self?.appendPage(page)
-                    case .failure(let error):
-                        self?.handle(error: error)
-                    }
                     self?.loading.value = .none
                 }
-        })
+            } catch {
+                await MainActor.run { [weak self] in
+                    self?.handle(error: error)
+                    self?.loading.value = .none
+                }
+            }
+        }
     }
 
     private func handle(error: Error) {

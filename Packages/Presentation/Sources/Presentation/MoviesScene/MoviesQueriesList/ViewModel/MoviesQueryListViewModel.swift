@@ -15,49 +15,42 @@ public protocol MoviesQueryListViewModelOutput {
 
 public protocol MoviesQueryListViewModel: MoviesQueryListViewModelInput, MoviesQueryListViewModelOutput { }
 
-public typealias FetchRecentMovieQueriesUseCaseFactory = (
-    FetchRecentMovieQueriesUseCase.RequestValue,
-    @escaping (FetchRecentMovieQueriesUseCase.ResultValue) -> Void
-) -> UseCase
-
 final class DefaultMoviesQueryListViewModel: MoviesQueryListViewModel {
 
     private let numberOfQueriesToShow: Int
-    private let fetchRecentMovieQueriesUseCaseFactory: FetchRecentMovieQueriesUseCaseFactory
+    private let fetchRecentMovieQueriesUseCase: FetchRecentMovieQueriesUseCase
     private let didSelect: MoviesQueryListViewModelDidSelectAction?
-    private let mainQueue: DispatchQueueType
     
     // MARK: - OUTPUT
     let items: Observable<[MoviesQueryListItemViewModel]> = Observable([])
     
     init(
         numberOfQueriesToShow: Int,
-        fetchRecentMovieQueriesUseCaseFactory: @escaping FetchRecentMovieQueriesUseCaseFactory,
-        didSelect: MoviesQueryListViewModelDidSelectAction? = nil,
-        mainQueue: DispatchQueueType = DispatchQueue.main
+        fetchRecentMovieQueriesUseCase: FetchRecentMovieQueriesUseCase,
+        didSelect: MoviesQueryListViewModelDidSelectAction? = nil
     ) {
         self.numberOfQueriesToShow = numberOfQueriesToShow
-        self.fetchRecentMovieQueriesUseCaseFactory = fetchRecentMovieQueriesUseCaseFactory
+        self.fetchRecentMovieQueriesUseCase = fetchRecentMovieQueriesUseCase
         self.didSelect = didSelect
-        self.mainQueue = mainQueue
     }
     
     private func updateMoviesQueries() {
-        let request = FetchRecentMovieQueriesUseCase.RequestValue(maxCount: numberOfQueriesToShow)
-        let completion: (FetchRecentMovieQueriesUseCase.ResultValue) -> Void = { [weak self] result in
-            self?.mainQueue.async {
-                switch result {
-                case .success(let items):
-                    self?.items.value = items
+        Task {
+            do {
+                let request = FetchRecentMovieQueriesUseCase.RequestValue(maxCount: numberOfQueriesToShow)
+                let queries = try await fetchRecentMovieQueriesUseCase.start()
+                await MainActor.run { [weak self] in
+                    self?.items.value = queries
                         .map { $0.query }
                         .map(MoviesQueryListItemViewModel.init)
-                case .failure:
-                    break
+                }
+            } catch {
+                // Silently fail for queries - not critical to user
+                await MainActor.run { [weak self] in
+                    self?.items.value = []
                 }
             }
         }
-        let useCase = fetchRecentMovieQueriesUseCaseFactory(request, completion)
-        useCase.start()
     }
 }
 

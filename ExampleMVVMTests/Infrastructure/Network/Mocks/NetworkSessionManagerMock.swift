@@ -1,14 +1,6 @@
 import Foundation
 @testable import ExampleMVVM
 
-struct NetworkSessionManagerMock: NetworkSessionManager {
-    let response: HTTPURLResponse?
-    let data: Data?
-    let error: Error?
-    
-    func request(_ request: URLRequest,
-                 completion: @escaping CompletionHandler) -> NetworkCancellable {
-        completion(data, response, error)
-        return URLSessionDataTask()
-    }
-}
+// This mock is no longer used with async/await.
+// NetworkSessionManager was replaced with native URLSession.data(for:) calls
+// in the refactored NetworkService.swift

@@ -13,42 +13,47 @@ class MoviesQueriesListViewModelTests: XCTestCase {
                         MovieQuery(query: "query4"),
                         MovieQuery(query: "query5")]
 
-    class FetchRecentMovieQueriesUseCaseMock: UseCase {
+    class FetchRecentMovieQueriesUseCaseMock: FetchRecentMovieQueriesUseCase {
         var startCalledCount: Int = 0
         var error: Error?
         var movieQueries: [MovieQuery] = []
-        var completion: (Result<[MovieQuery], Error>) -> Void = { _ in }
 
-        func start() -> Cancellable? {
-            if let error = error {
-                completion(.failure(error))
-            } else {
-                completion(.success(movieQueries))
-            }
+        init(requestValue: RequestValue, moviesQueriesRepository: MoviesQueriesRepository) {
+            super.init(requestValue: requestValue, moviesQueriesRepository: moviesQueriesRepository)
+        }
+
+        override func start() async throws -> [MovieQuery] {
             startCalledCount += 1
-            return nil
+            if let error = error {
+                throw error
+            }
+            return movieQueries
         }
     }
-
-    func makeFetchRecentMovieQueriesUseCase(_ mock: FetchRecentMovieQueriesUseCaseMock) -> FetchRecentMovieQueriesUseCaseFactory {
-        return { _, completion in
-            mock.completion = completion
-            return mock
-        }
-    }
-    
     
     func test_whenFetchRecentMovieQueriesUseCaseReturnsQueries_thenShowTheseQueries() {
         // given
-        let useCase = FetchRecentMovieQueriesUseCaseMock()
+        let moviesQueriesRepository = MoviesQueriesRepositoryMock()
+        let useCase = FetchRecentMovieQueriesUseCaseMock(
+            requestValue: .init(maxCount: 3),
+            moviesQueriesRepository: moviesQueriesRepository
+        )
         useCase.movieQueries = movieQueries
-        let viewModel = DefaultMoviesQueryListViewModel.make(
+        
+        let viewModel = DefaultMoviesQueryListViewModel(
             numberOfQueriesToShow: 3,
-            fetchRecentMovieQueriesUseCaseFactory: makeFetchRecentMovieQueriesUseCase(useCase)
+            fetchRecentMovieQueriesUseCase: useCase
         )
 
         // when
-        viewModel.viewWillAppear()
+        let expectation = XCTestExpectation(description: "Fetch queries")
+        Task {
+            viewModel.viewWillAppear()
+            try await Task.sleep(nanoseconds: 100_000_000) // Give async time to complete
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 1.0)
         
         // then
         XCTAssertEqual(viewModel.items.value.map { $0.query }, movieQueries.map { $0.query })
@@ -57,15 +62,27 @@ class MoviesQueriesListViewModelTests: XCTestCase {
     
     func test_whenFetchRecentMovieQueriesUseCaseReturnsError_thenDontShowAnyQuery() {
         // given
-        let useCase = FetchRecentMovieQueriesUseCaseMock()
+        let moviesQueriesRepository = MoviesQueriesRepositoryMock()
+        let useCase = FetchRecentMovieQueriesUseCaseMock(
+            requestValue: .init(maxCount: 3),
+            moviesQueriesRepository: moviesQueriesRepository
+        )
         useCase.error = FetchRecentQueriedUseCase.someError
-        let viewModel = DefaultMoviesQueryListViewModel.make(
+        
+        let viewModel = DefaultMoviesQueryListViewModel(
             numberOfQueriesToShow: 3,
-            fetchRecentMovieQueriesUseCaseFactory: makeFetchRecentMovieQueriesUseCase(useCase)
+            fetchRecentMovieQueriesUseCase: useCase
         )
         
         // when
-        viewModel.viewWillAppear()
+        let expectation = XCTestExpectation(description: "Fetch queries")
+        Task {
+            viewModel.viewWillAppear()
+            try await Task.sleep(nanoseconds: 100_000_000)
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 1.0)
         
         // then
         XCTAssertTrue(viewModel.items.value.isEmpty)
@@ -82,9 +99,15 @@ class MoviesQueriesListViewModelTests: XCTestCase {
             delegateNotifiedCount += 1
         }
         
-        let viewModel = DefaultMoviesQueryListViewModel.make(
+        let moviesQueriesRepository = MoviesQueriesRepositoryMock()
+        let useCase = FetchRecentMovieQueriesUseCaseMock(
+            requestValue: .init(maxCount: 3),
+            moviesQueriesRepository: moviesQueriesRepository
+        )
+        
+        let viewModel = DefaultMoviesQueryListViewModel(
             numberOfQueriesToShow: 3,
-            fetchRecentMovieQueriesUseCaseFactory: makeFetchRecentMovieQueriesUseCase(FetchRecentMovieQueriesUseCaseMock()),
+            fetchRecentMovieQueriesUseCase: useCase,
             didSelect: didSelect
         )
         
@@ -94,20 +117,5 @@ class MoviesQueriesListViewModelTests: XCTestCase {
         // then
         XCTAssertEqual(actionMovieQuery, selectedQueryItem)
         XCTAssertEqual(delegateNotifiedCount, 1)
-    }
-}
-
-extension DefaultMoviesQueryListViewModel {
-    static func make(
-        numberOfQueriesToShow: Int,
-        fetchRecentMovieQueriesUseCaseFactory: @escaping FetchRecentMovieQueriesUseCaseFactory,
-        didSelect: MoviesQueryListViewModelDidSelectAction? = nil
-    ) -> DefaultMoviesQueryListViewModel {
-        DefaultMoviesQueryListViewModel(
-            numberOfQueriesToShow: numberOfQueriesToShow,
-            fetchRecentMovieQueriesUseCaseFactory: fetchRecentMovieQueriesUseCaseFactory,
-            didSelect: didSelect,
-            mainQueue: DispatchQueueTypeMock()
-        )
     }
 }

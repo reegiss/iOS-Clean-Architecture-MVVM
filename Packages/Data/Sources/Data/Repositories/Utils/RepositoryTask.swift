@@ -1,13 +1,5 @@
 import Foundation
-import Common
-import Networking
 
-class RepositoryTask: Cancellable {
-    var networkTask: NetworkCancellable?
-    var isCancelled: Bool = false
-    
-    func cancel() {
-        networkTask?.cancel()
-        isCancelled = true
-    }
-}
+// This file is kept for backwards compatibility but is no longer used.
+// With async/await, tasks are managed directly via Swift's Task type
+// and native cancellation support.

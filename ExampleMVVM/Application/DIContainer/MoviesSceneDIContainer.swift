@@ -28,13 +28,9 @@ final class MoviesSceneDIContainer: MoviesSearchFlowCoordinatorDependencies {
         )
     }
     
-    func makeFetchRecentMovieQueriesUseCase(
-        requestValue: Int,
-        completion: @escaping (Result<[MovieQuery], Error>) -> Void
-    ) -> UseCase {
+    func makeFetchRecentMovieQueriesUseCase() -> FetchRecentMovieQueriesUseCase {
         return FetchRecentMovieQueriesUseCaseFactory.make(
-            requestValue: FetchRecentMovieQueriesUseCase.RequestValue(maxCount: requestValue),
-            completion: completion,
+            requestValue: FetchRecentMovieQueriesUseCase.RequestValue(maxCount: 10),
             moviesQueriesRepository: makeMoviesQueriesRepository()
         )
     }
@@ -96,16 +92,9 @@ final class MoviesSceneDIContainer: MoviesSearchFlowCoordinatorDependencies {
     }
     
     func makeMoviesQueryListViewModel(didSelect: @escaping MoviesQueryListViewModelDidSelectAction) -> MoviesQueryListViewModel {
-        let useCaseFactory: (FetchRecentMovieQueriesUseCase.RequestValue, @escaping (FetchRecentMovieQueriesUseCase.ResultValue) -> Void) -> UseCase = { requestValue, completion in
-            return FetchRecentMovieQueriesUseCaseFactory.make(
-                requestValue: requestValue,
-                completion: completion,
-                moviesQueriesRepository: self.makeMoviesQueriesRepository()
-            )
-        }
         return MoviesQueryListViewModelFactory.make(
             numberOfQueriesToShow: 10,
-            fetchRecentMovieQueriesUseCaseFactory: useCaseFactory,
+            fetchRecentMovieQueriesUseCase: makeFetchRecentMovieQueriesUseCase(),
             didSelect: didSelect
         )
     }

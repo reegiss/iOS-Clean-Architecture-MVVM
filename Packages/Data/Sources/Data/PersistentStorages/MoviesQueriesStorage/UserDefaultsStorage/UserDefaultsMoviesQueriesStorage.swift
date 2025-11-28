@@ -38,32 +38,37 @@ public final class UserDefaultsMoviesQueriesStorage {
 
 extension UserDefaultsMoviesQueriesStorage: MoviesQueriesStorage {
 
-    public func fetchRecentsQueries(
-        maxCount: Int,
-        completion: @escaping (Result<[MovieQuery], Error>) -> Void
-    ) {
-        backgroundQueue.async { [weak self] in
-            guard let self = self else { return }
-
-            var queries = self.fetchMoviesQueries()
-            queries = queries.count < self.maxStorageLimit ? queries : Array(queries[0..<maxCount])
-            completion(.success(queries))
+    public func fetchRecentsQueries(maxCount: Int) async throws -> [MovieQuery] {
+        return try await withCheckedThrowingContinuation { [weak self] continuation in
+            guard let self = self else {
+                continuation.resume(throwing: NSError(domain: "UserDefaultsMoviesQueriesStorage", code: -1))
+                return
+            }
+            
+            backgroundQueue.async { [weak self] in
+                guard let self = self else { return }
+                var queries = self.fetchMoviesQueries()
+                queries = queries.count < self.maxStorageLimit ? queries : Array(queries[0..<maxCount])
+                continuation.resume(returning: queries)
+            }
         }
     }
 
-    public func saveRecentQuery(
-        query: MovieQuery,
-        completion: @escaping (Result<MovieQuery, Error>) -> Void
-    ) {
-        backgroundQueue.async { [weak self] in
-            guard let self = self else { return }
-
-            var queries = self.fetchMoviesQueries()
-            self.cleanUpQueries(for: query, in: &queries)
-            queries.insert(query, at: 0)
-            self.persist(moviesQueries: queries)
-
-            completion(.success(query))
+    public func saveRecentQuery(query: MovieQuery) async throws -> MovieQuery {
+        return try await withCheckedThrowingContinuation { [weak self] continuation in
+            guard let self = self else {
+                continuation.resume(throwing: NSError(domain: "UserDefaultsMoviesQueriesStorage", code: -1))
+                return
+            }
+            
+            backgroundQueue.async { [weak self] in
+                guard let self = self else { return }
+                var queries = self.fetchMoviesQueries()
+                self.cleanUpQueries(for: query, in: &queries)
+                queries.insert(query, at: 0)
+                self.persist(moviesQueries: queries)
+                continuation.resume(returning: query)
+            }
         }
     }
 }

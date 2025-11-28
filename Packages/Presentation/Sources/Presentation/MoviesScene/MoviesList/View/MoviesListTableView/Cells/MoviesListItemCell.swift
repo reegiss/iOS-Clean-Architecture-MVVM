@@ -14,8 +14,7 @@ final class MoviesListItemCell: UITableViewCell {
 
     private var viewModel: MoviesListItemViewModel?
     private var posterImagesRepository: PosterImagesRepository?
-    private var imageLoadTask: Cancellable? { willSet { imageLoadTask?.cancel() } }
-    private let mainQueue: DispatchQueueType = DispatchQueue.main
+    private var imageLoadTask: Task<Void, Never>?
 
     func fill(
         with viewModel: MoviesListItemViewModel,
@@ -34,16 +33,21 @@ final class MoviesListItemCell: UITableViewCell {
         posterImageView?.image = nil
         guard let viewModel = viewModel, let posterImagePath = viewModel.posterImagePath else { return }
 
-        imageLoadTask = posterImagesRepository?.fetchImage(
-            with: posterImagePath,
-            width: width
-        ) { [weak self] result in
-            self?.mainQueue.async {
-                guard let currentPath = self?.viewModel?.posterImagePath, currentPath == posterImagePath else { return }
-                if case let .success(data) = result {
-                    self?.posterImageView?.image = UIImage(data: data)
+        imageLoadTask?.cancel()
+        imageLoadTask = Task {
+            do {
+                let data = try await posterImagesRepository?.fetchImage(
+                    with: posterImagePath,
+                    width: width
+                )
+                await MainActor.run { [weak self] in
+                    guard let currentPath = self?.viewModel?.posterImagePath, currentPath == posterImagePath else { return }
+                    if let data = data {
+                        self?.posterImageView?.image = UIImage(data: data)
+                    }
                 }
-                self?.imageLoadTask = nil
+            } catch {
+                // Silently fail on image loading
             }
         }
     }

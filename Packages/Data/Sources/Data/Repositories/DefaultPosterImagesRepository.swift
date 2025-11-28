@@ -6,36 +6,17 @@ import Networking
 final class DefaultPosterImagesRepository {
     
     private let dataTransferService: DataTransferService
-    private let backgroundQueue: DataTransferDispatchQueue
 
-    init(
-        dataTransferService: DataTransferService,
-        backgroundQueue: DataTransferDispatchQueue = DispatchQueue.global(qos: .userInitiated)
-    ) {
+    init(dataTransferService: DataTransferService) {
         self.dataTransferService = dataTransferService
-        self.backgroundQueue = backgroundQueue
     }
 }
 
 extension DefaultPosterImagesRepository: PosterImagesRepository {
     
-    func fetchImage(
-        with imagePath: String,
-        width: Int,
-        completion: @escaping (Result<Data, Error>) -> Void
-    ) -> Cancellable? {
-        
+    func fetchImage(with imagePath: String, width: Int) async throws -> Data {
         let endpoint = APIEndpoints.getMoviePoster(path: imagePath, width: width)
-        let task = RepositoryTask()
-        task.networkTask = dataTransferService.request(
-            with: endpoint,
-            on: backgroundQueue
-        ) { (result: Result<Data, DataTransferError>) in
-
-            let result = result.mapError { $0 as Error }
-            completion(result)
-        }
-        return task
+        return try await dataTransferService.request(with: endpoint)
     }
 }
 

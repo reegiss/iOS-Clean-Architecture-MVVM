@@ -7,7 +7,7 @@ class MovieDetailsViewModelTests: XCTestCase {
         case someError
     }
     
-    func test_updatePosterImageWithWidthEventReceived_thenImageWithThisWidthIsDownloaded() {
+    func test_updatePosterImageWithWidthEventReceived_thenImageWithThisWidthIsDownloaded() async {
         // given
         let posterImagesRepository = PosterImagesRepositoryMock()
 
@@ -19,8 +19,7 @@ class MovieDetailsViewModelTests: XCTestCase {
 
         let viewModel = DefaultMovieDetailsViewModel(
             movie: Movie.stub(posterPath: "posterPath"),
-            posterImagesRepository: posterImagesRepository,
-            mainQueue: DispatchQueueTypeMock()
+            posterImagesRepository: posterImagesRepository
         )
         
         posterImagesRepository.validateInput = { (imagePath: String, width: Int) in
@@ -30,6 +29,9 @@ class MovieDetailsViewModelTests: XCTestCase {
         
         // when
         viewModel.updatePosterImage(width: 200)
+        
+        // Give async task time to complete
+        try await Task.sleep(nanoseconds: 100_000_000)
         
         // then
         XCTAssertEqual(viewModel.posterImage.value, expectedImage)
