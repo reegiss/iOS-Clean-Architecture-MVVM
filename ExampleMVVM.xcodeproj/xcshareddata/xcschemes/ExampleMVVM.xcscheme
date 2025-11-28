@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1010"
-   version = "1.3">
+   LastUpgradeVersion = "1430"
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
-      buildImplicitDependencies = "YES">
+      buildImplicitDependencies = "YES"
+      runPostActionsOnFailure = "NO">
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -14,9 +15,37 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1FA53388201E1FDE00747E55"
+               BlueprintIdentifier = "B844C962D5E7F7EC5B1A8748"
                BuildableName = "ExampleMVVM.app"
                BlueprintName = "ExampleMVVM"
+               ReferencedContainer = "container:ExampleMVVM.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0F795F2D665961C71DDE9C92"
+               BuildableName = "ExampleMVVMTests.xctest"
+               BlueprintName = "ExampleMVVMTests"
+               ReferencedContainer = "container:ExampleMVVM.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "560768720D2AF1EFC69BDFB1"
+               BuildableName = "ExampleMVVMUITests.xctest"
+               BlueprintName = "ExampleMVVMUITests"
                ReferencedContainer = "container:ExampleMVVM.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,40 +55,43 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "NO">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B844C962D5E7F7EC5B1A8748"
+            BuildableName = "ExampleMVVM.app"
+            BlueprintName = "ExampleMVVM"
+            ReferencedContainer = "container:ExampleMVVM.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "NO"
+            parallelizable = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1FA5339C201E1FDE00747E55"
+               BlueprintIdentifier = "0F795F2D665961C71DDE9C92"
                BuildableName = "ExampleMVVMTests.xctest"
                BlueprintName = "ExampleMVVMTests"
                ReferencedContainer = "container:ExampleMVVM.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
-            skipped = "NO">
+            skipped = "NO"
+            parallelizable = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F02DE3122F8507500E40C3A"
+               BlueprintIdentifier = "560768720D2AF1EFC69BDFB1"
                BuildableName = "ExampleMVVMUITests.xctest"
                BlueprintName = "ExampleMVVMUITests"
                ReferencedContainer = "container:ExampleMVVM.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1FA53388201E1FDE00747E55"
-            BuildableName = "ExampleMVVM.app"
-            BlueprintName = "ExampleMVVM"
-            ReferencedContainer = "container:ExampleMVVM.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -75,14 +107,14 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1FA53388201E1FDE00747E55"
+            BlueprintIdentifier = "B844C962D5E7F7EC5B1A8748"
             BuildableName = "ExampleMVVM.app"
             BlueprintName = "ExampleMVVM"
             ReferencedContainer = "container:ExampleMVVM.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -94,7 +126,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1FA53388201E1FDE00747E55"
+            BlueprintIdentifier = "B844C962D5E7F7EC5B1A8748"
             BuildableName = "ExampleMVVM.app"
             BlueprintName = "ExampleMVVM"
             ReferencedContainer = "container:ExampleMVVM.xcodeproj">
