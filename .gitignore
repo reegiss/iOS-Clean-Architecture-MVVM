@@ -9,3 +9,6 @@ ExampleMVVM.xcodeproj
 
 # SwiftPM / Xcode build folder
 .build/
+
+# Local logs
+*.log
