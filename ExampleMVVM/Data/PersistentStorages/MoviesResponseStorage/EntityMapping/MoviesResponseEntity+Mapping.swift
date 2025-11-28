@@ -6,7 +6,7 @@ extension MoviesResponseEntity {
         return .init(
             page: Int(page),
             totalPages: Int(totalPages),
-            movies: movies?.allObjects.map { ($0 as! MovieResponseEntity).toDTO() } ?? []
+            movies: movies?.allObjects.compactMap { ($0 as? MovieResponseEntity)?.toDTO() } ?? []
         )
     }
 }

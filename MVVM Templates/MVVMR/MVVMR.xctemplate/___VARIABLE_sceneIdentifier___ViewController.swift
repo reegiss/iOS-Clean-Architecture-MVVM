@@ -10,7 +10,12 @@ import UIKit
 
 class ___VARIABLE_sceneIdentifier___ViewController: UIViewController, StoryboardInstantiable {
     
-    var viewModel: ___VARIABLE_sceneIdentifier___ViewModel!
+    var viewModel: ___VARIABLE_sceneIdentifier___ViewModel?
+
+    private var vm: ___VARIABLE_sceneIdentifier___ViewModel {
+        guard let vm = viewModel else { fatalError("___VARIABLE_sceneIdentifier___ViewController.viewModel must be set before use") }
+        return vm
+    }
     
     class func create(with viewModel: ___VARIABLE_sceneIdentifier___ViewModel) -> ___VARIABLE_sceneIdentifier___ViewController {
         let vc = ___VARIABLE_sceneIdentifier___ViewController.instantiateViewController()
@@ -21,8 +26,8 @@ class ___VARIABLE_sceneIdentifier___ViewController: UIViewController, Storyboard
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        bind(to: viewModel)
-        viewModel.viewDidLoad()
+        bind(to: vm)
+        vm.viewDidLoad()
     }
     
     func bind(to viewModel: ___VARIABLE_sceneIdentifier___ViewModel) {

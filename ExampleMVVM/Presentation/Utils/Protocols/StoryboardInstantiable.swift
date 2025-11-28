@@ -8,7 +8,11 @@ protocol StoryboardInstantiable: NSObjectProtocol {
 
 extension StoryboardInstantiable where Self: UIViewController {
     static var defaultFileName: String {
-        return NSStringFromClass(Self.self).components(separatedBy: ".").last!
+        let components = NSStringFromClass(Self.self).components(separatedBy: ".")
+        guard let last = components.last, !last.isEmpty else {
+            fatalError("Cannot determine default storyboard file name for \(Self.self)")
+        }
+        return last
     }
     
     static func instantiateViewController(_ bundle: Bundle? = nil) -> Self {

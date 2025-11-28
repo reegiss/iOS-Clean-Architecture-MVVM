@@ -35,7 +35,10 @@ class NetworkServiceTests: XCTestCase {
         let config = NetworkConfigurableMock()
         var completionCallsCount = 0
         
-        let expectedResponseData = "Response data".data(using: .utf8)!
+        guard let expectedResponseData = "Response data".data(using: .utf8) else {
+            XCTFail("Failed to create expectedResponseData fixture")
+            return
+        }
         let sut = DefaultNetworkService(
             config: config,
             sessionManager: NetworkSessionManagerMock(
@@ -89,7 +92,11 @@ class NetworkServiceTests: XCTestCase {
         let config = NetworkConfigurableMock()
         var completionCallsCount = 0
         
-        let response = HTTPURLResponse(url: URL(string: "test_url")!,
+        guard let responseURL = URL(string: "test_url") else {
+            XCTFail("Failed to create response URL fixture")
+            return
+        }
+        let response = HTTPURLResponse(url: responseURL,
                                        statusCode: 500,
                                        httpVersion: "1.1",
                                        headerFields: [:])

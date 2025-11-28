@@ -54,6 +54,6 @@ final class MoviesSearchFlowCoordinator {
     private func closeMovieQueriesSuggestions() {
         moviesQueriesSuggestionsVC?.remove()
         moviesQueriesSuggestionsVC = nil
-        moviesListVC?.suggestionsListContainer.isHidden = true
+        moviesListVC?.suggestionsListContainer?.isHidden = true
     }
 }

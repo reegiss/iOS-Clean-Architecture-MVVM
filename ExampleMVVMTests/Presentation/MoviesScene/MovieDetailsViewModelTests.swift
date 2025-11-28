@@ -10,7 +10,10 @@ class MovieDetailsViewModelTests: XCTestCase {
         // given
         let posterImagesRepository = PosterImagesRepositoryMock()
 
-        let expectedImage = "image data".data(using: .utf8)!
+        guard let expectedImage = "image data".data(using: .utf8) else {
+            XCTFail("Failed to create expected image fixture")
+            return
+        }
         posterImagesRepository.image = expectedImage
 
         let viewModel = DefaultMovieDetailsViewModel(

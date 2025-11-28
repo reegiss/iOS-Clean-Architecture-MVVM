@@ -86,8 +86,16 @@ class DataTransferServiceTests: XCTestCase {
         let config = NetworkConfigurableMock()
         var completionCallsCount = 0
         
-        let responseData = #"{"invalidStructure": "Nothing"}"#.data(using: .utf8)!
-        let response = HTTPURLResponse(url: URL(string: "test_url")!,
+        let responseData = #"{"invalidStructure": "Nothing"}"#.data(using: .utf8)
+        guard let responseData = responseData else {
+            XCTFail("Failed to create responseData fixture")
+            return
+        }
+        guard let responseURL = URL(string: "test_url") else {
+            XCTFail("Failed to create response URL fixture")
+            return
+        }
+        let response = HTTPURLResponse(url: responseURL,
                                        statusCode: 500,
                                        httpVersion: "1.1",
                                        headerFields: nil)
@@ -127,7 +135,11 @@ class DataTransferServiceTests: XCTestCase {
         let config = NetworkConfigurableMock()
         var completionCallsCount = 0
         
-        let response = HTTPURLResponse(url: URL(string: "test_url")!,
+        guard let responseURL = URL(string: "test_url") else {
+            XCTFail("Failed to create response URL fixture")
+            return
+        }
+        let response = HTTPURLResponse(url: responseURL,
                                        statusCode: 200,
                                        httpVersion: "1.1",
                                        headerFields: [:])

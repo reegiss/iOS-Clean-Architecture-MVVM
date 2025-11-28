@@ -2,9 +2,14 @@ import UIKit
 
 final class MoviesListTableViewController: UITableViewController {
 
-    var viewModel: MoviesListViewModel!
+    var viewModel: MoviesListViewModel?
 
     var posterImagesRepository: PosterImagesRepository?
+    
+    private var vm: MoviesListViewModel {
+        guard let vm = viewModel else { fatalError("MoviesListTableViewController.viewModel must be set before use") }
+        return vm
+    }
     var nextPageLoadingSpinner: UIActivityIndicatorView?
 
     // MARK: - Lifecycle
@@ -42,7 +47,7 @@ final class MoviesListTableViewController: UITableViewController {
 extension MoviesListTableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.items.value.count
+        return vm.items.value.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -54,21 +59,21 @@ extension MoviesListTableViewController {
             return UITableViewCell()
         }
 
-        cell.fill(with: viewModel.items.value[indexPath.row],
+        cell.fill(with: vm.items.value[indexPath.row],
                   posterImagesRepository: posterImagesRepository)
 
-        if indexPath.row == viewModel.items.value.count - 1 {
-            viewModel.didLoadNextPage()
+        if indexPath.row == vm.items.value.count - 1 {
+            vm.didLoadNextPage()
         }
 
         return cell
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return viewModel.isEmpty ? tableView.frame.height : super.tableView(tableView, heightForRowAt: indexPath)
+        return vm.isEmpty ? tableView.frame.height : super.tableView(tableView, heightForRowAt: indexPath)
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewModel.didSelectItem(at: indexPath.row)
+        vm.didSelectItem(at: indexPath.row)
     }
 }

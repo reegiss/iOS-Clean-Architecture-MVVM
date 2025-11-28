@@ -2,7 +2,12 @@ import UIKit
 
 final class MoviesQueriesTableViewController: UITableViewController, StoryboardInstantiable {
     
-    private var viewModel: MoviesQueryListViewModel!
+    private var viewModel: MoviesQueryListViewModel?
+
+    private var vm: MoviesQueryListViewModel {
+        guard let vm = viewModel else { fatalError("MoviesQueriesTableViewController.viewModel must be set before use") }
+        return vm
+    }
 
     // MARK: - Lifecycle
 
@@ -15,7 +20,7 @@ final class MoviesQueriesTableViewController: UITableViewController, StoryboardI
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
-        bind(to: viewModel)
+        bind(to: vm)
     }
     
     private func bind(to viewModel: MoviesQueryListViewModel) {
@@ -25,7 +30,7 @@ final class MoviesQueriesTableViewController: UITableViewController, StoryboardI
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        viewModel.viewWillAppear()
+        vm.viewWillAppear()
     }
 
     // MARK: - Private
@@ -43,7 +48,7 @@ final class MoviesQueriesTableViewController: UITableViewController, StoryboardI
 extension MoviesQueriesTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.items.value.count
+        return vm.items.value.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,13 +56,13 @@ extension MoviesQueriesTableViewController {
             assertionFailure("Cannot dequeue reusable cell \(MoviesQueriesItemCell.self) with reuseIdentifier: \(MoviesQueriesItemCell.reuseIdentifier)")
             return UITableViewCell()
         }
-        cell.fill(with: viewModel.items.value[indexPath.row])
+        cell.fill(with: vm.items.value[indexPath.row])
 
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        viewModel.didSelect(item: viewModel.items.value[indexPath.row])
+        vm.didSelect(item: vm.items.value[indexPath.row])
     }
 }

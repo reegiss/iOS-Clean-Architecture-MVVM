@@ -17,7 +17,7 @@ struct APIEndpoints {
         let closestWidth = sizes
             .enumerated()
             .min { abs($0.1 - width) < abs($1.1 - width) }?
-            .element ?? sizes.first!
+            .element ?? sizes.first ?? width
         
         return Endpoint(
             path: "t/p/w\(closestWidth)\(path)",

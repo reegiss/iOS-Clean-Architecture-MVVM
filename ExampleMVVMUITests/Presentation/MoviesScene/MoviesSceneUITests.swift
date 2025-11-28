@@ -22,7 +22,7 @@ class MoviesSceneUITests: XCTestCase {
         }
         _ = app.searchFields[AccessibilityIdentifier.searchField].waitForExistence(timeout: 10)
         app.searchFields[AccessibilityIdentifier.searchField].typeText(searchText)
-        app.buttons["search"].tap()
+        app.buttons["Search"].tap()
         
         // Tap on first result row
         app.tables.cells.staticTexts[searchText].tap()

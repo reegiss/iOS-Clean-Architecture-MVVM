@@ -2,14 +2,21 @@ import UIKit
 
 final class MoviesListViewController: UIViewController, StoryboardInstantiable, Alertable {
     
-    @IBOutlet private var contentView: UIView!
-    @IBOutlet private var moviesListContainer: UIView!
-    @IBOutlet private(set) var suggestionsListContainer: UIView!
-    @IBOutlet private var searchBarContainer: UIView!
-    @IBOutlet private var emptyDataLabel: UILabel!
-    
-    private var viewModel: MoviesListViewModel!
+    @IBOutlet private var contentView: UIView?
+    @IBOutlet private var moviesListContainer: UIView?
+    @IBOutlet private(set) var suggestionsListContainer: UIView?
+    @IBOutlet private var searchBarContainer: UIView?
+    @IBOutlet private var emptyDataLabel: UILabel?
+
+    private var viewModel: MoviesListViewModel?
     private var posterImagesRepository: PosterImagesRepository?
+
+    private var vm: MoviesListViewModel {
+        guard let vm = viewModel else {
+            fatalError("MoviesListViewController.viewModel must be set before use")
+        }
+        return vm
+    }
 
     private var moviesTableViewController: MoviesListTableViewController?
     private var searchController = UISearchController(searchResultsController: nil)
@@ -30,8 +37,8 @@ final class MoviesListViewController: UIViewController, StoryboardInstantiable, 
         super.viewDidLoad()
         setupViews()
         setupBehaviours()
-        bind(to: viewModel)
-        viewModel.viewDidLoad()
+        bind(to: vm)
+        vm.viewDidLoad()
     }
 
     private func bind(to viewModel: MoviesListViewModel) {
@@ -50,7 +57,7 @@ final class MoviesListViewController: UIViewController, StoryboardInstantiable, 
         if segue.identifier == String(describing: MoviesListTableViewController.self),
             let destinationVC = segue.destination as? MoviesListTableViewController {
             moviesTableViewController = destinationVC
-            moviesTableViewController?.viewModel = viewModel
+            moviesTableViewController?.viewModel = vm
             moviesTableViewController?.posterImagesRepository = posterImagesRepository
         }
     }
@@ -58,8 +65,8 @@ final class MoviesListViewController: UIViewController, StoryboardInstantiable, 
     // MARK: - Private
 
     private func setupViews() {
-        title = viewModel.screenTitle
-        emptyDataLabel.text = viewModel.emptyDataTitle
+        title = vm.screenTitle
+        emptyDataLabel?.text = vm.emptyDataTitle
         setupSearchController()
     }
 
@@ -73,17 +80,17 @@ final class MoviesListViewController: UIViewController, StoryboardInstantiable, 
     }
 
     private func updateLoading(_ loading: MoviesListViewModelLoading?) {
-        emptyDataLabel.isHidden = true
-        moviesListContainer.isHidden = true
-        suggestionsListContainer.isHidden = true
+        emptyDataLabel?.isHidden = true
+        moviesListContainer?.isHidden = true
+        suggestionsListContainer?.isHidden = true
         LoadingView.hide()
 
         switch loading {
         case .fullScreen: LoadingView.show()
-        case .nextPage: moviesListContainer.isHidden = false
+        case .nextPage: moviesListContainer?.isHidden = false
         case .none:
-            moviesListContainer.isHidden = viewModel.isEmpty
-            emptyDataLabel.isHidden = !viewModel.isEmpty
+            moviesListContainer?.isHidden = vm.isEmpty
+            emptyDataLabel?.isHidden = !vm.isEmpty
         }
 
         moviesTableViewController?.updateLoading(loading)
@@ -92,10 +99,10 @@ final class MoviesListViewController: UIViewController, StoryboardInstantiable, 
 
     private func updateQueriesSuggestions() {
         guard searchController.searchBar.isFirstResponder else {
-            viewModel.closeQueriesSuggestions()
+            vm.closeQueriesSuggestions()
             return
         }
-        viewModel.showQueriesSuggestions()
+        vm.showQueriesSuggestions()
     }
 
     private func updateSearchQuery(_ query: String) {
@@ -105,7 +112,7 @@ final class MoviesListViewController: UIViewController, StoryboardInstantiable, 
 
     private func showError(_ error: String) {
         guard !error.isEmpty else { return }
-        showAlert(title: viewModel.errorTitle, message: error)
+        showAlert(title: vm.errorTitle, message: error)
     }
 }
 
@@ -115,14 +122,16 @@ extension MoviesListViewController {
     private func setupSearchController() {
         searchController.delegate = self
         searchController.searchBar.delegate = self
-        searchController.searchBar.placeholder = viewModel.searchBarPlaceholder
+        searchController.searchBar.placeholder = vm.searchBarPlaceholder
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.translatesAutoresizingMaskIntoConstraints = true
         searchController.searchBar.barStyle = .black
         searchController.hidesNavigationBarDuringPresentation = false
-        searchController.searchBar.frame = searchBarContainer.bounds
+        if let bounds = searchBarContainer?.bounds {
+            searchController.searchBar.frame = bounds
+        }
         searchController.searchBar.autoresizingMask = [.flexibleWidth]
-        searchBarContainer.addSubview(searchController.searchBar)
+        searchBarContainer?.addSubview(searchController.searchBar)
         definesPresentationContext = true
         if #available(iOS 13.0, *) {
             searchController.searchBar.searchTextField.accessibilityIdentifier = AccessibilityIdentifier.searchField
@@ -134,11 +143,11 @@ extension MoviesListViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchText = searchBar.text, !searchText.isEmpty else { return }
         searchController.isActive = false
-        viewModel.didSearch(query: searchText)
+        vm.didSearch(query: searchText)
     }
 
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        viewModel.didCancelSearch()
+        vm.didCancelSearch()
     }
 }
 
