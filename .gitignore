@@ -6,3 +6,6 @@
 project.xcworkspace/
 xcuserdata/
 ExampleMVVM.xcodeproj
+
+# SwiftPM / Xcode build folder
+.build/
