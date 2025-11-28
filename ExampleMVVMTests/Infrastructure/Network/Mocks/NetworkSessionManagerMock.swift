@@ -1,4 +1,5 @@
 import Foundation
+@testable import ExampleMVVM
 
 struct NetworkSessionManagerMock: NetworkSessionManager {
     let response: HTTPURLResponse?

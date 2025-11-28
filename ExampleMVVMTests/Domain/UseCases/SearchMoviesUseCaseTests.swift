@@ -1,4 +1,5 @@
 import XCTest
+@testable import ExampleMVVM
 
 class SearchMoviesUseCaseTests: XCTestCase {
     

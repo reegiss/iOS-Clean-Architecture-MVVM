@@ -1,4 +1,5 @@
 import XCTest
+@testable import ExampleMVVM
 
 private struct MockModel: Decodable {
     let name: String

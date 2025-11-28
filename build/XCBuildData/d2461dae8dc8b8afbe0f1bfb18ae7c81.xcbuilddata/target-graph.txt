@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'ExampleMVVMTests' in project 'ExampleMVVM'
+➜ Explicit dependency on target 'ExampleMVVM' in project 'ExampleMVVM'
+Target 'ExampleMVVM' in project 'ExampleMVVM' (no dependencies)

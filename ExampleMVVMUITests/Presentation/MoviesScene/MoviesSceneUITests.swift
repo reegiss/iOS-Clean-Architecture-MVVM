@@ -2,6 +2,11 @@ import XCTest
 
 class MoviesSceneUITests: XCTestCase {
 
+    private enum AccessibilityIdentifier {
+        static let movieDetailsView = "AccessibilityIdentifierMovieDetailsView"
+        static let searchField = "AccessibilityIdentifierSearchMovies"
+    }
+
     override func setUp() {
 
         continueAfterFailure = false
@@ -23,6 +28,9 @@ class MoviesSceneUITests: XCTestCase {
         _ = app.searchFields[AccessibilityIdentifier.searchField].waitForExistence(timeout: 10)
         app.searchFields[AccessibilityIdentifier.searchField].typeText(searchText)
         app.buttons["Search"].tap()
+        
+        // Wait for first result row to appear
+        XCTAssertTrue(app.tables.cells.staticTexts[searchText].waitForExistence(timeout: 10))
         
         // Tap on first result row
         app.tables.cells.staticTexts[searchText].tap()

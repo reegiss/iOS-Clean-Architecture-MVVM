@@ -15,3 +15,11 @@ extension Movie {
               releaseDate: releaseDate)
     }
 }
+
+extension MoviesPage {
+    static func stub(page: Int = 1,
+                     totalPages: Int = 1,
+                     movies: [Movie] = [.stub()]) -> Self {
+        MoviesPage(page: page, totalPages: totalPages, movies: movies)
+    }
+}

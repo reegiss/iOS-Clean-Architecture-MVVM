@@ -1,4 +1,5 @@
 import Foundation
+@testable import ExampleMVVM
 
 class NetworkConfigurableMock: NetworkConfigurable {
     var baseURL: URL = {
