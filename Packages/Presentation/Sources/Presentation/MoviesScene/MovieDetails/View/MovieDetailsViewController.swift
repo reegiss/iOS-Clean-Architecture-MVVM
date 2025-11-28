@@ -1,6 +1,6 @@
 import UIKit
 
-final class MovieDetailsViewController: UIViewController, StoryboardInstantiable {
+public final class MovieDetailsViewController: UIViewController, StoryboardInstantiable {
 
     @IBOutlet private var posterImageView: UIImageView?
     @IBOutlet private var overviewTextView: UITextView?
@@ -14,13 +14,13 @@ final class MovieDetailsViewController: UIViewController, StoryboardInstantiable
         return vm
     }
     
-    static func create(with viewModel: MovieDetailsViewModel) -> MovieDetailsViewController {
+    public static func create(with viewModel: MovieDetailsViewModel) -> MovieDetailsViewController {
         let view = MovieDetailsViewController.instantiateViewController()
         view.viewModel = viewModel
         return view
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         bind(to: vm)
@@ -30,7 +30,7 @@ final class MovieDetailsViewController: UIViewController, StoryboardInstantiable
         viewModel.posterImage.observe(on: self) { [weak self] in self?.posterImageView?.image = $0.flatMap(UIImage.init) }
     }
     
-    override func viewDidLayoutSubviews() {
+    public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         let width = Int(posterImageView?.imageSizeAfterAspectFit.scaledSize.width ?? 0)
         vm.updatePosterImage(width: width)

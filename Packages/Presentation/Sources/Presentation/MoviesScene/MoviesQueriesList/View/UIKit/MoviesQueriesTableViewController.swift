@@ -1,6 +1,6 @@
 import UIKit
 
-final class MoviesQueriesTableViewController: UITableViewController, StoryboardInstantiable {
+public final class MoviesQueriesTableViewController: UITableViewController, StoryboardInstantiable {
     
     private var viewModel: MoviesQueryListViewModel?
 
@@ -11,13 +11,13 @@ final class MoviesQueriesTableViewController: UITableViewController, StoryboardI
 
     // MARK: - Lifecycle
 
-    static func create(with viewModel: MoviesQueryListViewModel) -> MoviesQueriesTableViewController {
+    public static func create(with viewModel: MoviesQueryListViewModel) -> MoviesQueriesTableViewController {
         let view = MoviesQueriesTableViewController.instantiateViewController()
         view.viewModel = viewModel
         return view
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         bind(to: vm)
@@ -27,7 +27,7 @@ final class MoviesQueriesTableViewController: UITableViewController, StoryboardI
         viewModel.items.observe(on: self) { [weak self] _ in self?.tableView.reloadData() }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         vm.viewWillAppear()
@@ -47,11 +47,11 @@ final class MoviesQueriesTableViewController: UITableViewController, StoryboardI
 
 extension MoviesQueriesTableViewController {
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return vm.items.value.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MoviesQueriesItemCell.reuseIdentifier, for: indexPath) as? MoviesQueriesItemCell else {
             assertionFailure("Cannot dequeue reusable cell \(MoviesQueriesItemCell.self) with reuseIdentifier: \(MoviesQueriesItemCell.reuseIdentifier)")
             return UITableViewCell()
@@ -61,7 +61,7 @@ extension MoviesQueriesTableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         vm.didSelect(item: vm.items.value[indexPath.row])
     }

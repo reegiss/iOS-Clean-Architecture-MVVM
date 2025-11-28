@@ -1,6 +1,6 @@
 import Foundation
 
-protocol MoviesResponseStorage {
+public protocol MoviesResponseStorage {
     func getResponse(
         for request: MoviesRequestDTO,
         completion: @escaping (Result<MoviesResponseDTO?, Error>) -> Void

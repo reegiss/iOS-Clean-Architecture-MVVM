@@ -1,7 +1,7 @@
 import UIKit
 import Domain
 
-final class MoviesListViewController: UIViewController, StoryboardInstantiable, Alertable {
+public final class MoviesListViewController: UIViewController, StoryboardInstantiable, Alertable {
     
     @IBOutlet private var contentView: UIView?
     @IBOutlet private var moviesListContainer: UIView?
@@ -24,7 +24,7 @@ final class MoviesListViewController: UIViewController, StoryboardInstantiable, 
 
     // MARK: - Lifecycle
 
-    static func create(
+    public static func create(
         with viewModel: MoviesListViewModel,
         posterImagesRepository: PosterImagesRepository?
     ) -> MoviesListViewController {
@@ -34,7 +34,7 @@ final class MoviesListViewController: UIViewController, StoryboardInstantiable, 
         return view
     }
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         setupBehaviours()
@@ -49,12 +49,12 @@ final class MoviesListViewController: UIViewController, StoryboardInstantiable, 
         viewModel.error.observe(on: self) { [weak self] in self?.showError($0) }
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
+    public override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         searchController.isActive = false
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == String(describing: MoviesListTableViewController.self),
             let destinationVC = segue.destination as? MoviesListTableViewController {
             moviesTableViewController = destinationVC
@@ -141,27 +141,27 @@ extension MoviesListViewController {
 }
 
 extension MoviesListViewController: UISearchBarDelegate {
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    public func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchText = searchBar.text, !searchText.isEmpty else { return }
         searchController.isActive = false
         vm.didSearch(query: searchText)
     }
 
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+    public func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         vm.didCancelSearch()
     }
 }
 
 extension MoviesListViewController: UISearchControllerDelegate {
-    func willPresentSearchController(_ searchController: UISearchController) {
+    public func willPresentSearchController(_ searchController: UISearchController) {
         updateQueriesSuggestions()
     }
 
-    func willDismissSearchController(_ searchController: UISearchController) {
+    public func willDismissSearchController(_ searchController: UISearchController) {
         updateQueriesSuggestions()
     }
 
-    func didDismissSearchController(_ searchController: UISearchController) {
+    public func didDismissSearchController(_ searchController: UISearchController) {
         updateQueriesSuggestions()
     }
 }

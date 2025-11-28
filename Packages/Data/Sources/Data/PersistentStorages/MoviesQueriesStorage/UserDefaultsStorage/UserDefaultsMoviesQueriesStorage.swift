@@ -1,4 +1,6 @@
 import Foundation
+import Domain
+import Common
 
 public final class UserDefaultsMoviesQueriesStorage {
     private let maxStorageLimit: Int
@@ -36,7 +38,7 @@ public final class UserDefaultsMoviesQueriesStorage {
 
 extension UserDefaultsMoviesQueriesStorage: MoviesQueriesStorage {
 
-    func fetchRecentsQueries(
+    public func fetchRecentsQueries(
         maxCount: Int,
         completion: @escaping (Result<[MovieQuery], Error>) -> Void
     ) {
@@ -49,7 +51,7 @@ extension UserDefaultsMoviesQueriesStorage: MoviesQueriesStorage {
         }
     }
 
-    func saveRecentQuery(
+    public func saveRecentQuery(
         query: MovieQuery,
         completion: @escaping (Result<MovieQuery, Error>) -> Void
     ) {

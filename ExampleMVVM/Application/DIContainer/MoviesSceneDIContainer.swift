@@ -29,11 +29,11 @@ final class MoviesSceneDIContainer: MoviesSearchFlowCoordinatorDependencies {
     }
     
     func makeFetchRecentMovieQueriesUseCase(
-        requestValue: (maxCount: Int),
+        requestValue: Int,
         completion: @escaping (Result<[MovieQuery], Error>) -> Void
     ) -> UseCase {
         return FetchRecentMovieQueriesUseCaseFactory.make(
-            requestValue: requestValue,
+            requestValue: FetchRecentMovieQueriesUseCase.RequestValue(maxCount: requestValue),
             completion: completion,
             moviesQueriesRepository: makeMoviesQueriesRepository()
         )
@@ -54,7 +54,7 @@ final class MoviesSceneDIContainer: MoviesSearchFlowCoordinatorDependencies {
     
     // MARK: - Movies List
     func makeMoviesListViewController(actions: MoviesListViewModelActions) -> MoviesListViewController {
-        MoviesListViewController.create(
+        return MoviesListViewController.create(
             with: makeMoviesListViewModel(actions: actions),
             posterImagesRepository: makePosterImagesRepository()
         )
@@ -69,7 +69,7 @@ final class MoviesSceneDIContainer: MoviesSearchFlowCoordinatorDependencies {
     
     // MARK: - Movie Details
     func makeMoviesDetailsViewController(movie: Movie) -> UIViewController {
-        MovieDetailsViewController.create(
+        return MovieDetailsViewController.create(
             with: makeMoviesDetailsViewModel(movie: movie)
         )
     }
@@ -96,9 +96,16 @@ final class MoviesSceneDIContainer: MoviesSearchFlowCoordinatorDependencies {
     }
     
     func makeMoviesQueryListViewModel(didSelect: @escaping MoviesQueryListViewModelDidSelectAction) -> MoviesQueryListViewModel {
+        let useCaseFactory: (FetchRecentMovieQueriesUseCase.RequestValue, @escaping (FetchRecentMovieQueriesUseCase.ResultValue) -> Void) -> UseCase = { requestValue, completion in
+            return FetchRecentMovieQueriesUseCaseFactory.make(
+                requestValue: requestValue,
+                completion: completion,
+                moviesQueriesRepository: self.makeMoviesQueriesRepository()
+            )
+        }
         return MoviesQueryListViewModelFactory.make(
             numberOfQueriesToShow: 10,
-            fetchRecentMovieQueriesUseCaseFactory: makeFetchRecentMovieQueriesUseCase,
+            fetchRecentMovieQueriesUseCaseFactory: useCaseFactory,
             didSelect: didSelect
         )
     }
@@ -114,7 +121,7 @@ final class MoviesSceneDIContainer: MoviesSearchFlowCoordinatorDependencies {
 
     // MARK: - Flow Coordinators
     func makeMoviesSearchFlowCoordinator(navigationController: UINavigationController) -> MoviesSearchFlowCoordinator {
-        MoviesSearchFlowCoordinator(
+        return MoviesSearchFlowCoordinator(
             navigationController: navigationController,
             dependencies: self
         )

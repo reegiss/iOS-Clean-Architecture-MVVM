@@ -8,7 +8,7 @@ public enum CoreDataStorageError: Error {
 
 public final class CoreDataStorage {
 
-    static let shared = CoreDataStorage()
+    public static let shared = CoreDataStorage()
     
     // MARK: - Core Data stack
     private lazy var persistentContainer: NSPersistentContainer = {

@@ -5,7 +5,7 @@ public final class CoreDataMoviesResponseStorage {
 
     private let coreDataStorage: CoreDataStorage
 
-    public init(coreDataStorage: CoreDataStorage = CoreDataStorage.shared) {
+    public init(coreDataStorage: CoreDataStorage) {
         self.coreDataStorage = coreDataStorage
     }
 
@@ -37,9 +37,9 @@ public final class CoreDataMoviesResponseStorage {
     }
 }
 
-public extension CoreDataMoviesResponseStorage: MoviesResponseStorage {
+extension CoreDataMoviesResponseStorage: MoviesResponseStorage {
 
-    func getResponse(
+    public func getResponse(
         for requestDto: MoviesRequestDTO,
         completion: @escaping (Result<MoviesResponseDTO?, Error>) -> Void
     ) {
@@ -55,7 +55,7 @@ public extension CoreDataMoviesResponseStorage: MoviesResponseStorage {
         }
     }
 
-    func save(
+    public func save(
         response responseDto: MoviesResponseDTO,
         for requestDto: MoviesRequestDTO
     ) {

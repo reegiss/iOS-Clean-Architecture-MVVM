@@ -16,7 +16,7 @@ public struct DataFactory {
     /// the concrete implementation type.
     public func makeMoviesRepository() -> MoviesRepository {
         // choose default storage implementation inside the Data module
-        let cache = CoreDataMoviesResponseStorage()
+        let cache = CoreDataMoviesResponseStorage(coreDataStorage: CoreDataStorage.shared)
         return MoviesRepositoryFactory.make(
             dataTransferService: dataTransferService,
             cache: cache
@@ -25,7 +25,7 @@ public struct DataFactory {
 
     /// Creates a `MoviesQueriesRepository` (recent queries storage)
     public func makeMoviesQueriesRepository(maxStorageLimit: Int = 10) -> MoviesQueriesRepository {
-        let storage = CoreDataMoviesQueriesStorage(maxStorageLimit: maxStorageLimit)
+        let storage = CoreDataMoviesQueriesStorage(maxStorageLimit: maxStorageLimit, coreDataStorage: CoreDataStorage.shared)
         return MoviesQueriesRepositoryFactory.make(moviesQueriesPersistentStorage: storage)
     }
 }

@@ -8,6 +8,10 @@ extension MoviesQueryListItemViewModel: Identifiable { }
 public struct MoviesQueryListView: View {
     @ObservedObject var viewModelWrapper: MoviesQueryListViewModelWrapper
     
+    public init(viewModelWrapper: MoviesQueryListViewModelWrapper) {
+        self.viewModelWrapper = viewModelWrapper
+    }
+    
     public var body: some View {
         List(viewModelWrapper.items) { item in
             Button(action: {

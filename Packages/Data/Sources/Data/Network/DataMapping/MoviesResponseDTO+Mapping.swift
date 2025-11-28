@@ -1,4 +1,5 @@
 import Foundation
+import Domain
 
 // MARK: - Data Transfer Object
 
@@ -23,7 +24,7 @@ extension MoviesResponseDTO {
             case overview
             case releaseDate = "release_date"
         }
-        enum GenreDTO: String, Decodable {
+        public enum GenreDTO: String, Decodable {
             case adventure
             case scienceFiction = "science_fiction"
         }
