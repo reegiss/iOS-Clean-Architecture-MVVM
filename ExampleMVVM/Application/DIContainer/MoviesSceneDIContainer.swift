@@ -14,10 +14,7 @@ final class MoviesSceneDIContainer: MoviesSearchFlowCoordinatorDependencies {
     }
     
     private let dependencies: Dependencies
-
-    // MARK: - Persistent Storage
-    lazy var moviesQueriesStorage: MoviesQueriesStorage = CoreDataMoviesQueriesStorage(maxStorageLimit: 10)
-    lazy var moviesResponseCache: MoviesResponseStorage = CoreDataMoviesResponseStorage()
+    private lazy var dataFactory = DataFactory(dataTransferService: dependencies.apiDataTransferService)
 
     init(dependencies: Dependencies) {
         self.dependencies = dependencies        
@@ -44,15 +41,10 @@ final class MoviesSceneDIContainer: MoviesSearchFlowCoordinatorDependencies {
     
     // MARK: - Repositories
     func makeMoviesRepository() -> MoviesRepository {
-        return MoviesRepositoryFactory.make(
-            dataTransferService: dependencies.apiDataTransferService,
-            cache: moviesResponseCache
-        )
+        return dataFactory.makeMoviesRepository()
     }
     func makeMoviesQueriesRepository() -> MoviesQueriesRepository {
-        return MoviesQueriesRepositoryFactory.make(
-            moviesQueriesPersistentStorage: moviesQueriesStorage
-        )
+        return dataFactory.makeMoviesQueriesRepository(maxStorageLimit: 10)
     }
     func makePosterImagesRepository() -> PosterImagesRepository {
         return PosterImagesRepositoryFactory.make(
