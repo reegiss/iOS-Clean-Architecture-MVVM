@@ -1,0 +1,55 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "common",
+          "kind" : "fileSystem",
+          "location" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common",
+          "name" : "Common"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common"
+        },
+        "subpath" : "common"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "domain",
+          "kind" : "fileSystem",
+          "location" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain",
+          "name" : "Domain"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain"
+        },
+        "subpath" : "domain"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "networking",
+          "kind" : "fileSystem",
+          "location" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking",
+          "name" : "Networking"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking"
+        },
+        "subpath" : "networking"
+      }
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}

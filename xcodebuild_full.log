@@ -1,0 +1,17 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project ExampleMVVM.xcodeproj -scheme ExampleMVVM -sdk iphonesimulator -destination "platform=iOS Simulator,OS=18.5" -configuration Debug build CODE_SIGNING_ALLOWED=NO
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    SDKROOT = iphonesimulator18.5
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  Presentation: /Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation
+  Domain: /Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain
+  Common: /Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common
+  Data: /Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data
+  Networking: /Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking
+

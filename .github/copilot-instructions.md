@@ -1,3 +1,4 @@
+````instructions
 Project: iOS-Clean-Architecture-MVVM — AI coding assistant guidance
 
 Keep guidance concise and focused on codebase-specific patterns, not generic best practices.
@@ -62,11 +63,11 @@ Keep guidance concise and focused on codebase-specific patterns, not generic bes
       ```
     - Run unit/UI tests via fastlane (Travis uses this):
       ```bash
-      bundle exec fastlane scan --scheme ExampleMVVM --device "iPhone 11 Pro Max"
+      bundle exec fastlane scan --scheme ExampleMVVM
       ```
     - Alternative: run tests with xcodebuild locally:
       ```bash
-      xcodebuild test -workspace ExampleMVVM.xcworkspace -scheme ExampleMVVM -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max'
+      xcodebuild test -workspace ExampleMVVM.xcworkspace -scheme ExampleMVVM -destination 'platform=iOS Simulator'
       ```
 
 - Testing & where to add tests:
@@ -80,10 +81,10 @@ Keep guidance concise and focused on codebase-specific patterns, not generic bes
 
 - When editing code, follow this change flow for feature work:
   1. Add/extend `Domain` entity + use case + repository interface.
- 2. Implement repository behavior and DTO mapping in `Data`/`Infrastructure`.
- 3. Register concrete instances in the DI container(s).
- 4. Add ViewModel and connect UI (Storyboard/SwiftUI) and update/implement a Flow Coordinator if navigation is required.
- 5. Add unit tests mirroring other tests in `ExampleMVVMTests`.
+  2. Implement repository behavior and DTO mapping in `Data`/`Infrastructure`.
+  3. Register concrete instances in the DI container(s).
+  4. Add ViewModel and connect UI (Storyboard/SwiftUI) and update/implement a Flow Coordinator if navigation is required.
+  5. Add unit tests mirroring other tests in `ExampleMVVMTests`.
 
 - Notes for the AI assistant:
   - Avoid changing architectural boundaries; prefer adding new files following the existing layered layout.
@@ -91,4 +92,7 @@ Keep guidance concise and focused on codebase-specific patterns, not generic bes
   - Use existing examples (Movies feature) as templates for naming, DI registration, and DTO mapping style.
   - If updating dependency versions or CI flows (Gemfile, .travis.yml, Fastfile), list exact commands to run locally for verification.
 
-If anything above is unclear or you want more examples (e.g., a small patch showing adding a Use Case + repo + ViewModel), tell me which area to expand. 
+- Note: The project does not include an `.xcworkspace` file. Ensure to generate one if needed for Xcode workflows.
+
+If anything above is unclear or you want more examples (e.g., a small patch showing adding a Use Case + repo + ViewModel), tell me which area to expand.
+````

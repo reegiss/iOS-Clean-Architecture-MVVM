@@ -1,0 +1,53 @@
+{
+  "": {
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/master.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Entities/Movie.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/Movie.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/Movie.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/Movie~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/Movie.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Entities/MovieQuery.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MovieQuery.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MovieQuery.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MovieQuery~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MovieQuery.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/MoviesQueriesRepository.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MoviesQueriesRepository.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MoviesQueriesRepository.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MoviesQueriesRepository~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MoviesQueriesRepository.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/MoviesRepository.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MoviesRepository.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MoviesRepository.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MoviesRepository~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MoviesRepository.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/PosterImagesRepository.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/PosterImagesRepository.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/PosterImagesRepository.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/PosterImagesRepository~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/PosterImagesRepository.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/FetchRecentMovieQueriesUseCase.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/FetchRecentMovieQueriesUseCase.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/FetchRecentMovieQueriesUseCase.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/FetchRecentMovieQueriesUseCase~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/FetchRecentMovieQueriesUseCase.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/SearchMoviesUseCase.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/SearchMoviesUseCase.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/SearchMoviesUseCase.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/SearchMoviesUseCase~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/SearchMoviesUseCase.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/UseCase.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/UseCase.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/UseCase.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/UseCase~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/UseCase.swiftdeps"
+  }
+}

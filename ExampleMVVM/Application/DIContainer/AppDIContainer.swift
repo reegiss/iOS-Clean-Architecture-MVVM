@@ -1,4 +1,9 @@
 import Foundation
+import Common
+import Domain
+import Networking
+import Data
+import Presentation
 
 final class AppDIContainer {
     
@@ -9,7 +14,7 @@ final class AppDIContainer {
         guard let apiBaseURL = URL(string: appConfiguration.apiBaseURL) else {
             fatalError("AppConfiguration.apiBaseURL is invalid: \(appConfiguration.apiBaseURL)")
         }
-        let config = ApiDataNetworkConfig(
+        let config = NetworkConfigFactory.make(
             baseURL: apiBaseURL,
             queryParameters: [
                 "api_key": appConfiguration.apiKey,
@@ -17,18 +22,18 @@ final class AppDIContainer {
             ]
         )
         
-        let apiDataNetwork = DefaultNetworkService(config: config)
-        return DefaultDataTransferService(with: apiDataNetwork)
+        let apiDataNetwork = NetworkServiceFactory.make(config: config)
+        return DataTransferServiceFactory.make(networkService: apiDataNetwork)
     }()
     lazy var imageDataTransferService: DataTransferService = {
         guard let imagesBaseURL = URL(string: appConfiguration.imagesBaseURL) else {
             fatalError("AppConfiguration.imagesBaseURL is invalid: \(appConfiguration.imagesBaseURL)")
         }
-        let config = ApiDataNetworkConfig(
+        let config = NetworkConfigFactory.make(
             baseURL: imagesBaseURL
         )
-        let imagesDataNetwork = DefaultNetworkService(config: config)
-        return DefaultDataTransferService(with: imagesDataNetwork)
+        let imagesDataNetwork = NetworkServiceFactory.make(config: config)
+        return DataTransferServiceFactory.make(networkService: imagesDataNetwork)
     }()
     
     // MARK: - DIContainers of scenes

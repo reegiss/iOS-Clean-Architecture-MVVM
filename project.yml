@@ -8,6 +8,17 @@ settings:
   base:
     IPHONEOS_DEPLOYMENT_TARGET: "13.0"
     SWIFT_VERSION: "5.0"
+packages:
+  Common:
+    path: Packages/Common
+  Domain:
+    path: Packages/Domain
+  Networking:
+    path: Packages/Networking
+  Data:
+    path: Packages/Data
+  Presentation:
+    path: Packages/Presentation
 targets:
   ExampleMVVM:
     type: application
@@ -17,6 +28,12 @@ targets:
       - path: ExampleMVVM
         excludes:
           - ExampleMVVM.xcodeproj
+    dependencies:
+      - package: Common
+      - package: Domain
+      - package: Networking
+      - package: Data
+      - package: Presentation
     settings:
       INFO_PLIST_FILE: "ExampleMVVM/Resources/Info.plist"
       PRODUCT_BUNDLE_IDENTIFIER: "Oleh-Kudinov.ExampleMVVM"
@@ -29,11 +46,16 @@ targets:
     deploymentTarget: "13.0"
     sources:
       - ExampleMVVMTests
+    dependencies:
+      - target: ExampleMVVM
+      - package: Common
+      - package: Domain
+      - package: Networking
+      - package: Data
+      - package: Presentation
     settings:
       INFO_PLIST_FILE: "ExampleMVVMTests/Info.plist"
       PRODUCT_BUNDLE_IDENTIFIER: "Oleh-Kudinov.ExampleMVVMTests"
-    dependencies:
-      - target: ExampleMVVM
 
   ExampleMVVMUITests:
     type: bundle.ui-testing
@@ -41,11 +63,12 @@ targets:
     deploymentTarget: "13.0"
     sources:
       - ExampleMVVMUITests
+    dependencies:
+      - target: ExampleMVVM
+      - package: Domain
     settings:
       INFO_PLIST_FILE: "ExampleMVVMUITests/Info.plist"
       PRODUCT_BUNDLE_IDENTIFIER: "Oleh-Kudinov.ExampleMVVMUITests"
-    dependencies:
-      - target: ExampleMVVM
 
 schemes:
   ExampleMVVM:

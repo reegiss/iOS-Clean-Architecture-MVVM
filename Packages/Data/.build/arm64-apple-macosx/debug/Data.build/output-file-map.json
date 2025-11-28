@@ -1,0 +1,107 @@
+{
+  "": {
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/master.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/Network/APIEndpoints.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/APIEndpoints.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/APIEndpoints.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/APIEndpoints~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/APIEndpoints.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/Network/DataMapping/MoviesRequestDTO+Mapping.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesRequestDTO+Mapping.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesRequestDTO+Mapping.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesRequestDTO+Mapping~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesRequestDTO+Mapping.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/Network/DataMapping/MoviesResponseDTO+Mapping.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesResponseDTO+Mapping.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesResponseDTO+Mapping.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesResponseDTO+Mapping~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesResponseDTO+Mapping.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/CoreDataStorage/CoreDataStorage.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/CoreDataStorage.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/CoreDataStorage.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/CoreDataStorage~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/CoreDataStorage.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/MoviesQueriesStorage/CoreDataStorage/CoreDataMoviesQueriesStorage.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/CoreDataMoviesQueriesStorage.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/CoreDataMoviesQueriesStorage.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/CoreDataMoviesQueriesStorage~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/CoreDataMoviesQueriesStorage.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/MoviesQueriesStorage/CoreDataStorage/EntityMapping/MovieQueryEntity+Mapping.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MovieQueryEntity+Mapping.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MovieQueryEntity+Mapping.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MovieQueryEntity+Mapping~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MovieQueryEntity+Mapping.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/MoviesQueriesStorage/MoviesQueriesStorage.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesQueriesStorage.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesQueriesStorage.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesQueriesStorage~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesQueriesStorage.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/MoviesQueriesStorage/UserDefaultsStorage/DataMapping/MovieQueryUDS+Mapping.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MovieQueryUDS+Mapping.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MovieQueryUDS+Mapping.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MovieQueryUDS+Mapping~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MovieQueryUDS+Mapping.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/MoviesQueriesStorage/UserDefaultsStorage/UserDefaultsMoviesQueriesStorage.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/UserDefaultsMoviesQueriesStorage.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/UserDefaultsMoviesQueriesStorage.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/UserDefaultsMoviesQueriesStorage~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/UserDefaultsMoviesQueriesStorage.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/MoviesResponseStorage/CoreDataMoviesResponseStorage.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/CoreDataMoviesResponseStorage.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/CoreDataMoviesResponseStorage.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/CoreDataMoviesResponseStorage~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/CoreDataMoviesResponseStorage.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/MoviesResponseStorage/EntityMapping/MoviesResponseEntity+Mapping.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesResponseEntity+Mapping.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesResponseEntity+Mapping.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesResponseEntity+Mapping~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesResponseEntity+Mapping.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/MoviesResponseStorage/MoviesResponseStorage.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesResponseStorage.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesResponseStorage.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesResponseStorage~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/MoviesResponseStorage.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/Repositories/DefaultMoviesQueriesRepository.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/DefaultMoviesQueriesRepository.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/DefaultMoviesQueriesRepository.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/DefaultMoviesQueriesRepository~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/DefaultMoviesQueriesRepository.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/Repositories/DefaultMoviesRepository.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/DefaultMoviesRepository.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/DefaultMoviesRepository.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/DefaultMoviesRepository~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/DefaultMoviesRepository.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/Repositories/DefaultPosterImagesRepository.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/DefaultPosterImagesRepository.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/DefaultPosterImagesRepository.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/DefaultPosterImagesRepository~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/DefaultPosterImagesRepository.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/Repositories/Utils/RepositoryTask.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/RepositoryTask.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/RepositoryTask.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/RepositoryTask~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/RepositoryTask.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/resource_bundle_accessor.d",
+    "object": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/resource_bundle_accessor.swiftdeps"
+  }
+}

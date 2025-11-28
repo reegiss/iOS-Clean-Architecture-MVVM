@@ -1,0 +1,4 @@
+module Common {
+    header "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/.build/arm64-apple-macosx/debug/Common.build/Common-Swift.h"
+    requires objc
+}

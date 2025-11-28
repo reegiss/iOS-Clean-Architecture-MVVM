@@ -1,0 +1,8 @@
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Entities/Movie.swift
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Entities/MovieQuery.swift
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/MoviesQueriesRepository.swift
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/MoviesRepository.swift
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/PosterImagesRepository.swift
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/FetchRecentMovieQueriesUseCase.swift
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/SearchMoviesUseCase.swift
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/UseCase.swift

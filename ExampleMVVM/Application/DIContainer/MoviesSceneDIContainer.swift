@@ -1,5 +1,10 @@
 import UIKit
 import SwiftUI
+import Common
+import Domain
+import Networking
+import Data
+import Presentation
 
 final class MoviesSceneDIContainer: MoviesSearchFlowCoordinatorDependencies {
     
@@ -20,17 +25,17 @@ final class MoviesSceneDIContainer: MoviesSearchFlowCoordinatorDependencies {
     
     // MARK: - Use Cases
     func makeSearchMoviesUseCase() -> SearchMoviesUseCase {
-        DefaultSearchMoviesUseCase(
+        return SearchMoviesUseCaseFactory.make(
             moviesRepository: makeMoviesRepository(),
             moviesQueriesRepository: makeMoviesQueriesRepository()
         )
     }
     
     func makeFetchRecentMovieQueriesUseCase(
-        requestValue: FetchRecentMovieQueriesUseCase.RequestValue,
-        completion: @escaping (FetchRecentMovieQueriesUseCase.ResultValue) -> Void
+        requestValue: (maxCount: Int),
+        completion: @escaping (Result<[MovieQuery], Error>) -> Void
     ) -> UseCase {
-        FetchRecentMovieQueriesUseCase(
+        return FetchRecentMovieQueriesUseCaseFactory.make(
             requestValue: requestValue,
             completion: completion,
             moviesQueriesRepository: makeMoviesQueriesRepository()
@@ -39,18 +44,18 @@ final class MoviesSceneDIContainer: MoviesSearchFlowCoordinatorDependencies {
     
     // MARK: - Repositories
     func makeMoviesRepository() -> MoviesRepository {
-        DefaultMoviesRepository(
+        return MoviesRepositoryFactory.make(
             dataTransferService: dependencies.apiDataTransferService,
             cache: moviesResponseCache
         )
     }
     func makeMoviesQueriesRepository() -> MoviesQueriesRepository {
-        DefaultMoviesQueriesRepository(
+        return MoviesQueriesRepositoryFactory.make(
             moviesQueriesPersistentStorage: moviesQueriesStorage
         )
     }
     func makePosterImagesRepository() -> PosterImagesRepository {
-        DefaultPosterImagesRepository(
+        return PosterImagesRepositoryFactory.make(
             dataTransferService: dependencies.imageDataTransferService
         )
     }
@@ -64,7 +69,7 @@ final class MoviesSceneDIContainer: MoviesSearchFlowCoordinatorDependencies {
     }
     
     func makeMoviesListViewModel(actions: MoviesListViewModelActions) -> MoviesListViewModel {
-        DefaultMoviesListViewModel(
+        return MoviesListViewModelFactory.make(
             searchMoviesUseCase: makeSearchMoviesUseCase(),
             actions: actions
         )
@@ -78,7 +83,7 @@ final class MoviesSceneDIContainer: MoviesSearchFlowCoordinatorDependencies {
     }
     
     func makeMoviesDetailsViewModel(movie: Movie) -> MovieDetailsViewModel {
-        DefaultMovieDetailsViewModel(
+        return MovieDetailsViewModelFactory.make(
             movie: movie,
             posterImagesRepository: makePosterImagesRepository()
         )
@@ -99,7 +104,7 @@ final class MoviesSceneDIContainer: MoviesSearchFlowCoordinatorDependencies {
     }
     
     func makeMoviesQueryListViewModel(didSelect: @escaping MoviesQueryListViewModelDidSelectAction) -> MoviesQueryListViewModel {
-        DefaultMoviesQueryListViewModel(
+        return MoviesQueryListViewModelFactory.make(
             numberOfQueriesToShow: 10,
             fetchRecentMovieQueriesUseCaseFactory: makeFetchRecentMovieQueriesUseCase,
             didSelect: didSelect

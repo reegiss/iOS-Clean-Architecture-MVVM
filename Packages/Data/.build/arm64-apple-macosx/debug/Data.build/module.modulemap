@@ -1,0 +1,4 @@
+module Data {
+    header "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/.build/arm64-apple-macosx/debug/Data.build/Data-Swift.h"
+    requires objc
+}

@@ -1,0 +1,38 @@
+import Foundation
+
+public protocol NetworkConfigurable {
+    var baseURL: URL { get }
+    var headers: [String: String] { get }
+    var queryParameters: [String: String] { get }
+}
+
+struct ApiDataNetworkConfig: NetworkConfigurable {
+    let baseURL: URL
+    let headers: [String: String]
+    let queryParameters: [String: String]
+    
+     init(
+        baseURL: URL,
+        headers: [String: String] = [:],
+        queryParameters: [String: String] = [:]
+     ) {
+        self.baseURL = baseURL
+        self.headers = headers
+        self.queryParameters = queryParameters
+    }
+}
+
+// MARK: - Factory
+public enum NetworkConfigFactory {
+    public static func make(
+        baseURL: URL,
+        headers: [String: String] = [:],
+        queryParameters: [String: String] = [:]
+    ) -> NetworkConfigurable {
+        return ApiDataNetworkConfig(
+            baseURL: baseURL,
+            headers: headers,
+            queryParameters: queryParameters
+        )
+    }
+}

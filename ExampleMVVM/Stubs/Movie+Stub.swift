@@ -1,4 +1,5 @@
 import Foundation
+import Domain
 
 extension Movie {
     static func stub(id: Movie.Identifier = "id1",

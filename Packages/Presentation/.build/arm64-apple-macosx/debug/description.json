@@ -1,0 +1,1360 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Common-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Common.build/sources",
+      "importPath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common/Sources/Common/Cancellable.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common/Sources/Common/ConnectionError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common/Sources/Common/DispatchQueueType.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Common.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Common",
+      "moduleOutputPath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules/Common.swiftmodule",
+      "objects" : [
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Common.build/Cancellable.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Common.build/ConnectionError.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Common.build/DispatchQueueType.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Common.build/Common-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Common.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Common.build/Cancellable.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Common.build/ConnectionError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Common.build/DispatchQueueType.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules/Common.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common/Sources/Common/Cancellable.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common/Sources/Common/ConnectionError.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common/Sources/Common/DispatchQueueType.swift"
+      ],
+      "tempsPath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Common.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Domain-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/sources",
+      "importPath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Entities/Movie.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Entities/MovieQuery.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/MoviesQueriesRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/MoviesRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/PosterImagesRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/FetchRecentMovieQueriesUseCase.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/SearchMoviesUseCase.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/UseCase.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules/Common.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Domain",
+      "moduleOutputPath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules/Domain.swiftmodule",
+      "objects" : [
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/Movie.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MovieQuery.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MoviesQueriesRepository.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MoviesRepository.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/PosterImagesRepository.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/FetchRecentMovieQueriesUseCase.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/SearchMoviesUseCase.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/UseCase.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/Domain-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/Movie.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MovieQuery.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MoviesQueriesRepository.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/MoviesRepository.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/PosterImagesRepository.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/FetchRecentMovieQueriesUseCase.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/SearchMoviesUseCase.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/UseCase.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules/Domain.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Entities/Movie.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Entities/MovieQuery.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/MoviesQueriesRepository.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/MoviesRepository.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/PosterImagesRepository.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/FetchRecentMovieQueriesUseCase.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/SearchMoviesUseCase.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/UseCase.swift"
+      ],
+      "tempsPath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Networking-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build/sources",
+      "importPath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/Sources/Networking/DataTransferService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/Sources/Networking/Endpoint.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/Sources/Networking/NetworkConfig.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/Sources/Networking/NetworkService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules/Common.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Networking",
+      "moduleOutputPath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules/Networking.swiftmodule",
+      "objects" : [
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build/DataTransferService.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build/Endpoint.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build/NetworkConfig.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build/NetworkService.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build/Networking-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build/DataTransferService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build/Endpoint.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build/NetworkConfig.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build/NetworkService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules/Networking.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/Sources/Networking/DataTransferService.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/Sources/Networking/Endpoint.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/Sources/Networking/NetworkConfig.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/Sources/Networking/NetworkService.swift"
+      ],
+      "tempsPath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Presentation-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/sources",
+      "importPath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/Behaviors/BackButtonEmptyTitleNavigationBarBehavior.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/Behaviors/BlackStyleNavigationBarBehavior.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/Behaviors/ViewControllerLifecycleBehavior.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/Flows/MoviesSearchFlowCoordinator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MovieDetails/View/MovieDetailsViewController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MovieDetails/ViewModel/MovieDetailsViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MovieDetails/ViewModel/MovieDetailsViewModelFactory.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/View/MoviesListTableView/Cells/MoviesListItemCell.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/View/MoviesListTableView/MoviesListTableViewController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/View/MoviesListViewController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/ViewModel/MoviesListItemViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/ViewModel/MoviesListViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/ViewModel/MoviesListViewModelFactory.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/View/SwiftUI/MoviesQueryListView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/View/UIKit/Cells/MoviesQueriesItemCell.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/View/UIKit/MoviesQueriesTableViewController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/ViewModel/MoviesQueryListItemViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/ViewModel/MoviesQueryListViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/ViewModel/MoviesQueryListViewModelFactory.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/AccessibilityIdentifier.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/CGSize+ScaledSize.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/DataTransferError+ConnectionError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/UIImageView+ImageSizeAfterAspectFit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/UIViewController+ActivityIndicator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/UIViewController+AddBehaviors.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/UIViewController+AddChild.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/LoadingView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Observable.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Protocols/Alertable.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Protocols/StoryboardInstantiable.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules/Common.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules/Domain.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules/Networking.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Presentation",
+      "moduleOutputPath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules/Presentation.swiftmodule",
+      "objects" : [
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/BackButtonEmptyTitleNavigationBarBehavior.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/BlackStyleNavigationBarBehavior.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/ViewControllerLifecycleBehavior.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesSearchFlowCoordinator.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MovieDetailsViewController.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MovieDetailsViewModel.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MovieDetailsViewModelFactory.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesListItemCell.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesListTableViewController.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesListViewController.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesListItemViewModel.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesListViewModel.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesListViewModelFactory.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesQueryListView.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesQueriesItemCell.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesQueriesTableViewController.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesQueryListItemViewModel.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesQueryListViewModel.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesQueryListViewModelFactory.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/AccessibilityIdentifier.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/CGSize+ScaledSize.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/DataTransferError+ConnectionError.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/UIImageView+ImageSizeAfterAspectFit.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/UIViewController+ActivityIndicator.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/UIViewController+AddBehaviors.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/UIViewController+AddChild.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/LoadingView.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/Observable.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/Alertable.swift.o",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/StoryboardInstantiable.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/Presentation-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-DUIKIT",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/BackButtonEmptyTitleNavigationBarBehavior.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/BlackStyleNavigationBarBehavior.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/ViewControllerLifecycleBehavior.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesSearchFlowCoordinator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MovieDetailsViewController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MovieDetailsViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MovieDetailsViewModelFactory.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesListItemCell.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesListTableViewController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesListViewController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesListItemViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesListViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesListViewModelFactory.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesQueryListView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesQueriesItemCell.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesQueriesTableViewController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesQueryListItemViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesQueryListViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/MoviesQueryListViewModelFactory.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/AccessibilityIdentifier.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/CGSize+ScaledSize.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/DataTransferError+ConnectionError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/UIImageView+ImageSizeAfterAspectFit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/UIViewController+ActivityIndicator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/UIViewController+AddBehaviors.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/UIViewController+AddChild.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/LoadingView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/Observable.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/Alertable.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/StoryboardInstantiable.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules/Presentation.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/Behaviors/BackButtonEmptyTitleNavigationBarBehavior.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/Behaviors/BlackStyleNavigationBarBehavior.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/Behaviors/ViewControllerLifecycleBehavior.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/Flows/MoviesSearchFlowCoordinator.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MovieDetails/View/MovieDetailsViewController.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MovieDetails/ViewModel/MovieDetailsViewModel.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MovieDetails/ViewModel/MovieDetailsViewModelFactory.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/View/MoviesListTableView/Cells/MoviesListItemCell.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/View/MoviesListTableView/MoviesListTableViewController.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/View/MoviesListViewController.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/ViewModel/MoviesListItemViewModel.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/ViewModel/MoviesListViewModel.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/ViewModel/MoviesListViewModelFactory.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/View/SwiftUI/MoviesQueryListView.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/View/UIKit/Cells/MoviesQueriesItemCell.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/View/UIKit/MoviesQueriesTableViewController.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/ViewModel/MoviesQueryListItemViewModel.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/ViewModel/MoviesQueryListViewModel.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/ViewModel/MoviesQueryListViewModelFactory.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/AccessibilityIdentifier.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/CGSize+ScaledSize.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/DataTransferError+ConnectionError.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/UIImageView+ImageSizeAfterAspectFit.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/UIViewController+ActivityIndicator.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/UIViewController+AddBehaviors.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/UIViewController+AddChild.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/LoadingView.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Observable.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Protocols/Alertable.swift",
+        "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Protocols/StoryboardInstantiable.swift"
+      ],
+      "tempsPath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Common" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Common",
+      "-incremental",
+      "-c",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common/Sources/Common/Cancellable.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common/Sources/Common/ConnectionError.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common/Sources/Common/DispatchQueueType.swift",
+      "-I",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Common.build/Common-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "Domain" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Domain",
+      "-incremental",
+      "-c",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Entities/Movie.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Entities/MovieQuery.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/MoviesQueriesRepository.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/MoviesRepository.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/PosterImagesRepository.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/FetchRecentMovieQueriesUseCase.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/SearchMoviesUseCase.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/UseCase.swift",
+      "-I",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/Domain-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "Networking" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Networking",
+      "-incremental",
+      "-c",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/Sources/Networking/DataTransferService.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/Sources/Networking/Endpoint.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/Sources/Networking/NetworkConfig.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/Sources/Networking/NetworkService.swift",
+      "-I",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build/Networking-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "Presentation" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Presentation",
+      "-incremental",
+      "-c",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/Behaviors/BackButtonEmptyTitleNavigationBarBehavior.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/Behaviors/BlackStyleNavigationBarBehavior.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/Behaviors/ViewControllerLifecycleBehavior.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/Flows/MoviesSearchFlowCoordinator.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MovieDetails/View/MovieDetailsViewController.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MovieDetails/ViewModel/MovieDetailsViewModel.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MovieDetails/ViewModel/MovieDetailsViewModelFactory.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/View/MoviesListTableView/Cells/MoviesListItemCell.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/View/MoviesListTableView/MoviesListTableViewController.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/View/MoviesListViewController.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/ViewModel/MoviesListItemViewModel.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/ViewModel/MoviesListViewModel.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/ViewModel/MoviesListViewModelFactory.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/View/SwiftUI/MoviesQueryListView.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/View/UIKit/Cells/MoviesQueriesItemCell.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/View/UIKit/MoviesQueriesTableViewController.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/ViewModel/MoviesQueryListItemViewModel.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/ViewModel/MoviesQueryListViewModel.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/ViewModel/MoviesQueryListViewModelFactory.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/AccessibilityIdentifier.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/CGSize+ScaledSize.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/DataTransferError+ConnectionError.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/UIImageView+ImageSizeAfterAspectFit.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/UIViewController+ActivityIndicator.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/UIViewController+AddBehaviors.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/UIViewController+AddChild.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/LoadingView.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Observable.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Protocols/Alertable.swift",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Protocols/StoryboardInstantiable.swift",
+      "-I",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/Presentation-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-DUIKIT",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Common" : [
+
+    ],
+    "Domain" : [
+      "Common"
+    ],
+    "Networking" : [
+      "Common"
+    ],
+    "Presentation" : [
+      "Networking",
+      "Domain",
+      "Common"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Common.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common/Sources/Common/Cancellable.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common/Sources/Common/ConnectionError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common/Sources/Common/DispatchQueueType.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Common.build/sources"
+    },
+    "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Entities/Movie.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Entities/MovieQuery.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/MoviesQueriesRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/MoviesRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/Interfaces/PosterImagesRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/FetchRecentMovieQueriesUseCase.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/SearchMoviesUseCase.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Domain/Sources/Domain/UseCases/UseCase.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Domain.build/sources"
+    },
+    "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/Sources/Networking/DataTransferService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/Sources/Networking/Endpoint.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/Sources/Networking/NetworkConfig.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Networking/Sources/Networking/NetworkService.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build/sources"
+    },
+    "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/Behaviors/BackButtonEmptyTitleNavigationBarBehavior.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/Behaviors/BlackStyleNavigationBarBehavior.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/Behaviors/ViewControllerLifecycleBehavior.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/Flows/MoviesSearchFlowCoordinator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MovieDetails/View/MovieDetailsViewController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MovieDetails/ViewModel/MovieDetailsViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MovieDetails/ViewModel/MovieDetailsViewModelFactory.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/View/MoviesListTableView/Cells/MoviesListItemCell.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/View/MoviesListTableView/MoviesListTableViewController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/View/MoviesListViewController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/ViewModel/MoviesListItemViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/ViewModel/MoviesListViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesList/ViewModel/MoviesListViewModelFactory.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/View/SwiftUI/MoviesQueryListView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/View/UIKit/Cells/MoviesQueriesItemCell.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/View/UIKit/MoviesQueriesTableViewController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/ViewModel/MoviesQueryListItemViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/ViewModel/MoviesQueryListViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/MoviesScene/MoviesQueriesList/ViewModel/MoviesQueryListViewModelFactory.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/AccessibilityIdentifier.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/CGSize+ScaledSize.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/DataTransferError+ConnectionError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/UIImageView+ImageSizeAfterAspectFit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/UIViewController+ActivityIndicator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/UIViewController+AddBehaviors.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Extensions/UIViewController+AddChild.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/LoadingView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Observable.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Protocols/Alertable.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/Sources/Presentation/Utils/Protocols/StoryboardInstantiable.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Presentation.build/sources"
+    },
+    "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}
