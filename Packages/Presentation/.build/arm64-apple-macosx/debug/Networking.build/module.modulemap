@@ -1,4 +1,0 @@
-module Networking {
-    header "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Presentation/.build/arm64-apple-macosx/debug/Networking.build/Networking-Swift.h"
-    requires objc
-}
