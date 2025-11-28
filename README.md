@@ -55,3 +55,24 @@ https://user-images.githubusercontent.com/6785311/236615779-153ef846-ae0b-4ce8-9
 ## Requirements
 * Xcode Version 11.2.1+  Swift 5.0+
 
+
+## XcodeGen
+
+This repository includes a `project.yml` that can generate the Xcode project using `xcodegen`.
+
+To install `xcodegen` (macOS):
+
+```bash
+brew install xcodegen
+```
+
+To generate the project:
+
+```bash
+./scripts/generate_project.sh
+```
+
+The script will check for `xcodegen` and run `xcodegen generate --spec project.yml` in the repository root.
+
+Note: the repository currently includes an existing `ExampleMVVM.xcodeproj`. Generating with xcodegen will overwrite (regenerate) the Xcode project file.
+

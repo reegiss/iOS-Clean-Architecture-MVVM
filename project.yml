@@ -1,0 +1,61 @@
+name: ExampleMVVM
+options:
+  bundleIdPrefix: "Oleh-Kudinov"
+configs:
+  Debug: debug
+  Release: release
+settings:
+  base:
+    IPHONEOS_DEPLOYMENT_TARGET: "13.0"
+    SWIFT_VERSION: "5.0"
+targets:
+  ExampleMVVM:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources:
+      - path: ExampleMVVM
+        excludes:
+          - ExampleMVVM.xcodeproj
+    settings:
+      INFO_PLIST_FILE: "ExampleMVVM/Resources/Info.plist"
+      PRODUCT_BUNDLE_IDENTIFIER: "Oleh-Kudinov.ExampleMVVM"
+      SWIFT_VERSION: "5.0"
+    resources:
+      - ExampleMVVM/Resources
+
+  ExampleMVVMTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources:
+      - ExampleMVVMTests
+    settings:
+      INFO_PLIST_FILE: "ExampleMVVMTests/Info.plist"
+      PRODUCT_BUNDLE_IDENTIFIER: "Oleh-Kudinov.ExampleMVVMTests"
+    dependencies:
+      - target: ExampleMVVM
+
+  ExampleMVVMUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources:
+      - ExampleMVVMUITests
+    settings:
+      INFO_PLIST_FILE: "ExampleMVVMUITests/Info.plist"
+      PRODUCT_BUNDLE_IDENTIFIER: "com.solano.ExampleMVVMUITests"
+    dependencies:
+      - target: ExampleMVVM
+
+schemes:
+  ExampleMVVM:
+    build_targets:
+      - ExampleMVVM
+      - ExampleMVVMTests
+      - ExampleMVVMUITests
+    test_targets:
+      - ExampleMVVMTests
+      - ExampleMVVMUITests
+    run:
+      config: Debug
