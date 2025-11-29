@@ -1,4 +1,0 @@
-module Domain {
-header "Domain-Swift.h"
-export *
-}

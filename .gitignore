@@ -12,6 +12,7 @@ ExampleMVVM.xcodeproj
 
 # Local build / derived data produced by CI / local xcodebuild runs
 build/
+.build/
 build/derived-data/
 
 # Xcode Derived Data (explicit)
