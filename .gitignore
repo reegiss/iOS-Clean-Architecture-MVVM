@@ -10,5 +10,12 @@ ExampleMVVM.xcodeproj
 # SwiftPM / Xcode build folder
 .build/
 
+# Local build / derived data produced by CI / local xcodebuild runs
+build/
+build/derived-data/
+
+# Xcode Derived Data (explicit)
+DerivedData/
+
 # Local logs
 *.log
