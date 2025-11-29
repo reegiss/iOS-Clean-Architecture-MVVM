@@ -1,6 +1,8 @@
 import UIKit
 import Domain
 
+@objc(MoviesListTableViewController)
+@objcMembers
 final class MoviesListTableViewController: UITableViewController {
 
     var viewModel: MoviesListViewModel?

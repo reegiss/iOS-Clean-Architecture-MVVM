@@ -1,5 +1,7 @@
 import UIKit
 
+@objc(MovieDetailsViewController)
+@objcMembers
 public final class MovieDetailsViewController: UIViewController, StoryboardInstantiable {
 
     @IBOutlet private var posterImageView: UIImageView?

@@ -7,17 +7,23 @@ class MoviesSceneUITests: XCTestCase {
         static let searchField = "AccessibilityIdentifierSearchMovies"
     }
 
-    override func setUp() {
+    private let app = XCUIApplication()
 
+    override func setUp() {
         continueAfterFailure = false
-        XCUIApplication().launch()
+
+        // Use a single XCUIApplication instance and make sure it launches properly
+        app.launch()
+        if !app.waitForExistence(timeout: 10) {
+            XCTFail("Failed to launch the application under test")
+        }
     }
 
     // NOTE: for UI tests to work the keyboard of simulator must be on.
     // Keyboard shortcut COMMAND + SHIFT + K while simulator has focus
     func testOpenMovieDetails_whenSearchBatmanAndTapOnFirstResultRow_thenMovieDetailsViewOpensWithTitleBatman() {
         
-        let app = XCUIApplication()
+        let app = self.app
         
         // Search for Batman
         let searchText = "Batman Begins"

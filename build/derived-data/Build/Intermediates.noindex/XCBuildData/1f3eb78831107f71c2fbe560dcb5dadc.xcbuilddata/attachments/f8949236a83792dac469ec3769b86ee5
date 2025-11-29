@@ -1,0 +1,88 @@
+{
+  "" : {
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/ExampleMVVM-master.dia",
+    "emit-module-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/ExampleMVVM-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/ExampleMVVM-master-emit-module.dia",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/ExampleMVVM-master.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVM/Application/AppAppearance.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppAppearance.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppAppearance.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppAppearance.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppAppearance.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppAppearance.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppAppearance.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppAppearance.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppAppearance~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVM/Application/AppConfigurations.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppConfigurations.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppConfigurations.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppConfigurations.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppConfigurations.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppConfigurations.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppConfigurations.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppConfigurations.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppConfigurations~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVM/Application/AppDelegate.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVM/Application/AppFlowCoordinator.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppFlowCoordinator.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppFlowCoordinator.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppFlowCoordinator.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppFlowCoordinator.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppFlowCoordinator.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppFlowCoordinator.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppFlowCoordinator.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppFlowCoordinator~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVM/Application/DIContainer/AppDIContainer.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppDIContainer.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppDIContainer.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppDIContainer.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppDIContainer.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppDIContainer.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppDIContainer.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppDIContainer.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/AppDIContainer~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVM/Application/DIContainer/MoviesSceneDIContainer.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/MoviesSceneDIContainer.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/MoviesSceneDIContainer.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/MoviesSceneDIContainer.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/MoviesSceneDIContainer.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/MoviesSceneDIContainer.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/MoviesSceneDIContainer.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/MoviesSceneDIContainer.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/MoviesSceneDIContainer~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVM/Stubs/Movie+Stub.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/Movie+Stub.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/Movie+Stub.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/Movie+Stub.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/Movie+Stub.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/Movie+Stub.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/Movie+Stub.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/Movie+Stub.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/Movie+Stub~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphoneos/ExampleMVVM.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

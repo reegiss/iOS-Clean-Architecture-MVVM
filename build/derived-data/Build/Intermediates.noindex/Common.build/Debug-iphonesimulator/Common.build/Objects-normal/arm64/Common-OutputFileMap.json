@@ -1,0 +1,38 @@
+{
+  "" : {
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/Common-master.dia",
+    "emit-module-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/Common-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/Common-master-emit-module.dia",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/Common-master.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common/Sources/Common/Cancellable.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/Cancellable.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/Cancellable.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/Cancellable.dia",
+    "index-unit-output-path" : "/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/Cancellable.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/Cancellable.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/Cancellable.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/Cancellable.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/Cancellable~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common/Sources/Common/ConnectionError.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/ConnectionError.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/ConnectionError.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/ConnectionError.dia",
+    "index-unit-output-path" : "/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/ConnectionError.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/ConnectionError.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/ConnectionError.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/ConnectionError.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/ConnectionError~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Common/Sources/Common/DispatchQueueType.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/DispatchQueueType.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/DispatchQueueType.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/DispatchQueueType.dia",
+    "index-unit-output-path" : "/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/DispatchQueueType.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/DispatchQueueType.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/DispatchQueueType.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/DispatchQueueType.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Common.build/Debug-iphonesimulator/Common.build/Objects-normal/arm64/DispatchQueueType~partial.swiftmodule"
+  }
+}

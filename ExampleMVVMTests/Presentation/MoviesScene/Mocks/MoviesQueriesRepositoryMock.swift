@@ -1,5 +1,6 @@
 import Foundation
 @testable import ExampleMVVM
+import Domain
 
 class MoviesQueriesRepositoryMock: MoviesQueriesRepository {
     var queries: [MovieQuery] = []

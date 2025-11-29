@@ -1,0 +1,10 @@
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Infrastructure/Network/DataTransferServiceTests.swift
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Presentation/MoviesScene/MovieDetailsViewModelTests.swift
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Presentation/MoviesScene/MoviesListViewModelTests.swift
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Presentation/MoviesScene/MoviesQueriesListViewModelTests.swift
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Presentation/MoviesScene/Mocks/MoviesQueriesRepositoryMock.swift
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Infrastructure/Network/Mocks/NetworkConfigurableMock.swift
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Infrastructure/Network/NetworkServiceTests.swift
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Infrastructure/Network/Mocks/NetworkSessionManagerMock.swift
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Presentation/MoviesScene/Mocks/PosterImagesRepositoryMock.swift
+/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Domain/UseCases/SearchMoviesUseCaseTests.swift

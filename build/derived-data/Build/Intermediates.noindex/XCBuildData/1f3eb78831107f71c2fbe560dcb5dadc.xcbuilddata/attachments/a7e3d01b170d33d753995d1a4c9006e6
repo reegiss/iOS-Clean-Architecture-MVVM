@@ -1,0 +1,278 @@
+{
+  "" : {
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/Data-master.dia",
+    "emit-module-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/Data-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/Data-master-emit-module.dia",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/Data-master.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/DataFactory.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DataFactory.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DataFactory.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DataFactory.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DataFactory.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DataFactory.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DataFactory.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DataFactory.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DataFactory~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/Network/APIEndpoints.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/APIEndpoints.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/APIEndpoints.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/APIEndpoints.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/APIEndpoints.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/APIEndpoints.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/APIEndpoints.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/APIEndpoints.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/APIEndpoints~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/Network/DataMapping/MoviesRequestDTO+Mapping.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestDTO+Mapping.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestDTO+Mapping.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestDTO+Mapping.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestDTO+Mapping.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestDTO+Mapping.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestDTO+Mapping.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestDTO+Mapping.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestDTO+Mapping~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/Network/DataMapping/MoviesResponseDTO+Mapping.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseDTO+Mapping.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseDTO+Mapping.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseDTO+Mapping.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseDTO+Mapping.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseDTO+Mapping.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseDTO+Mapping.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseDTO+Mapping.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseDTO+Mapping~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/CoreDataStorage/CoreDataStorage.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataStorage-7c056e4086992d61c4975cc856b53f73.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataStorage-7c056e4086992d61c4975cc856b53f73.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataStorage-7c056e4086992d61c4975cc856b53f73.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataStorage-7c056e4086992d61c4975cc856b53f73.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataStorage-7c056e4086992d61c4975cc856b53f73.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataStorage-7c056e4086992d61c4975cc856b53f73.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataStorage-7c056e4086992d61c4975cc856b53f73.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataStorage-7c056e4086992d61c4975cc856b53f73~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/MoviesQueriesStorage/CoreDataStorage/CoreDataMoviesQueriesStorage.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataMoviesQueriesStorage.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataMoviesQueriesStorage.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataMoviesQueriesStorage.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataMoviesQueriesStorage.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataMoviesQueriesStorage.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataMoviesQueriesStorage.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataMoviesQueriesStorage.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataMoviesQueriesStorage~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/MoviesQueriesStorage/CoreDataStorage/EntityMapping/MovieQueryEntity+Mapping.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+Mapping.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+Mapping.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+Mapping.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+Mapping.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+Mapping.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+Mapping.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+Mapping.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+Mapping~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/MoviesQueriesStorage/MoviesQueriesStorage.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesQueriesStorage.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesQueriesStorage.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesQueriesStorage.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesQueriesStorage.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesQueriesStorage.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesQueriesStorage.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesQueriesStorage.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesQueriesStorage~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/MoviesQueriesStorage/UserDefaultsStorage/DataMapping/MovieQueryUDS+Mapping.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryUDS+Mapping.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryUDS+Mapping.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryUDS+Mapping.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryUDS+Mapping.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryUDS+Mapping.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryUDS+Mapping.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryUDS+Mapping.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryUDS+Mapping~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/MoviesQueriesStorage/UserDefaultsStorage/UserDefaultsMoviesQueriesStorage.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/UserDefaultsMoviesQueriesStorage.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/UserDefaultsMoviesQueriesStorage.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/UserDefaultsMoviesQueriesStorage.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/UserDefaultsMoviesQueriesStorage.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/UserDefaultsMoviesQueriesStorage.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/UserDefaultsMoviesQueriesStorage.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/UserDefaultsMoviesQueriesStorage.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/UserDefaultsMoviesQueriesStorage~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/MoviesResponseStorage/CoreDataMoviesResponseStorage.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataMoviesResponseStorage.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataMoviesResponseStorage.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataMoviesResponseStorage.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataMoviesResponseStorage.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataMoviesResponseStorage.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataMoviesResponseStorage.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataMoviesResponseStorage.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataMoviesResponseStorage~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/MoviesResponseStorage/EntityMapping/MoviesResponseEntity+Mapping.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+Mapping.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+Mapping.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+Mapping.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+Mapping.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+Mapping.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+Mapping.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+Mapping.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+Mapping~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/PersistentStorages/MoviesResponseStorage/MoviesResponseStorage.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseStorage.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseStorage.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseStorage.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseStorage.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseStorage.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseStorage.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseStorage.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseStorage~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/Repositories/DefaultMoviesQueriesRepository.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultMoviesQueriesRepository.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultMoviesQueriesRepository.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultMoviesQueriesRepository.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultMoviesQueriesRepository.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultMoviesQueriesRepository.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultMoviesQueriesRepository.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultMoviesQueriesRepository.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultMoviesQueriesRepository~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/Repositories/DefaultMoviesRepository.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultMoviesRepository.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultMoviesRepository.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultMoviesRepository.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultMoviesRepository.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultMoviesRepository.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultMoviesRepository.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultMoviesRepository.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultMoviesRepository~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/Repositories/DefaultPosterImagesRepository.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultPosterImagesRepository.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultPosterImagesRepository.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultPosterImagesRepository.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultPosterImagesRepository.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultPosterImagesRepository.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultPosterImagesRepository.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultPosterImagesRepository.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/DefaultPosterImagesRepository~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/Packages/Data/Sources/Data/Repositories/Utils/RepositoryTask.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/RepositoryTask.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/RepositoryTask.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/RepositoryTask.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/RepositoryTask.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/RepositoryTask.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/RepositoryTask.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/RepositoryTask.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/RepositoryTask~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/DerivedSources/CoreDataGenerated/CoreDataStorage/CoreDataStorage+CoreDataModel.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataStorage+CoreDataModel.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataStorage+CoreDataModel.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataStorage+CoreDataModel.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataStorage+CoreDataModel.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataStorage+CoreDataModel.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataStorage+CoreDataModel.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataStorage+CoreDataModel.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/CoreDataStorage+CoreDataModel~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/DerivedSources/CoreDataGenerated/CoreDataStorage/MovieQueryEntity+CoreDataClass.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+CoreDataClass.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+CoreDataClass.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+CoreDataClass.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+CoreDataClass.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+CoreDataClass.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/DerivedSources/CoreDataGenerated/CoreDataStorage/MovieQueryEntity+CoreDataProperties.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+CoreDataProperties.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+CoreDataProperties.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+CoreDataProperties.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+CoreDataProperties.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieQueryEntity+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/DerivedSources/CoreDataGenerated/CoreDataStorage/MovieResponseEntity+CoreDataClass.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieResponseEntity+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieResponseEntity+CoreDataClass.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieResponseEntity+CoreDataClass.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieResponseEntity+CoreDataClass.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieResponseEntity+CoreDataClass.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieResponseEntity+CoreDataClass.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieResponseEntity+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieResponseEntity+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/DerivedSources/CoreDataGenerated/CoreDataStorage/MovieResponseEntity+CoreDataProperties.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieResponseEntity+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieResponseEntity+CoreDataProperties.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieResponseEntity+CoreDataProperties.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieResponseEntity+CoreDataProperties.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieResponseEntity+CoreDataProperties.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieResponseEntity+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieResponseEntity+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MovieResponseEntity+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/DerivedSources/CoreDataGenerated/CoreDataStorage/MoviesRequestEntity+CoreDataClass.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestEntity+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestEntity+CoreDataClass.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestEntity+CoreDataClass.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestEntity+CoreDataClass.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestEntity+CoreDataClass.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestEntity+CoreDataClass.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestEntity+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestEntity+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/DerivedSources/CoreDataGenerated/CoreDataStorage/MoviesRequestEntity+CoreDataProperties.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestEntity+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestEntity+CoreDataProperties.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestEntity+CoreDataProperties.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestEntity+CoreDataProperties.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestEntity+CoreDataProperties.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestEntity+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestEntity+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesRequestEntity+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/DerivedSources/CoreDataGenerated/CoreDataStorage/MoviesResponseEntity+CoreDataClass.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+CoreDataClass.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+CoreDataClass.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+CoreDataClass.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+CoreDataClass.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+CoreDataClass.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/DerivedSources/CoreDataGenerated/CoreDataStorage/MoviesResponseEntity+CoreDataProperties.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+CoreDataProperties.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+CoreDataProperties.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+CoreDataProperties.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+CoreDataProperties.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/MoviesResponseEntity+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/DerivedSources/resource_bundle_accessor.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/resource_bundle_accessor.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/resource_bundle_accessor.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/resource_bundle_accessor.dia",
+    "index-unit-output-path" : "/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/resource_bundle_accessor.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/resource_bundle_accessor.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/resource_bundle_accessor.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/resource_bundle_accessor.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/Data.build/Debug-iphoneos/Data.build/Objects-normal/arm64/resource_bundle_accessor~partial.swiftmodule"
+  }
+}

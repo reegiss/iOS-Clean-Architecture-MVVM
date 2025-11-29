@@ -1,4 +1,5 @@
 import XCTest
+@testable import Domain
 @testable import ExampleMVVM
 
 class SearchMoviesUseCaseTests: XCTestCase {
@@ -98,10 +99,15 @@ class SearchMoviesUseCaseTests: XCTestCase {
             _ = try await useCase.execute(requestValue: requestValue)
             XCTFail("Should have thrown an error")
         } catch {
-            // Expected error
-            let recents = try await moviesQueriesRepository.fetchRecentsQueries(maxCount: 1)
-            XCTAssertTrue(recents.isEmpty)
-            XCTAssertEqual(moviesQueriesRepository.fetchCompletionCallsCount, 1)
+                // Expected error — verify that recents are empty. Handle any
+                // unexpected errors in the verification step.
+                do {
+                    let recents = try await moviesQueriesRepository.fetchRecentsQueries(maxCount: 1)
+                    XCTAssertTrue(recents.isEmpty)
+                    XCTAssertEqual(moviesQueriesRepository.fetchCompletionCallsCount, 1)
+                } catch {
+                    XCTFail("Unexpected error fetching recents: \(error)")
+                }
         }
     }
 }

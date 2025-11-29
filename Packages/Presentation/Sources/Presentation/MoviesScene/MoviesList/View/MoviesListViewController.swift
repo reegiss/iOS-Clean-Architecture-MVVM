@@ -1,6 +1,8 @@
 import UIKit
 import Domain
 
+@objc(MoviesListViewController)
+@objcMembers
 public final class MoviesListViewController: UIViewController, StoryboardInstantiable, Alertable {
     
     @IBOutlet private var contentView: UIView?

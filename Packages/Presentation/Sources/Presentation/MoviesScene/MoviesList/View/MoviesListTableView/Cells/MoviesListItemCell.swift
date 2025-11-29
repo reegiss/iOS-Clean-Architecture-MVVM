@@ -2,6 +2,8 @@ import UIKit
 import Domain
 import Common
 
+@objc(MoviesListItemCell)
+@objcMembers
 final class MoviesListItemCell: UITableViewCell {
 
     static let reuseIdentifier = String(describing: MoviesListItemCell.self)

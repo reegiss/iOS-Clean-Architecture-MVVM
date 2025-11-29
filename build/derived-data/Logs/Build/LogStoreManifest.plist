@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>11</integer>
+	<key>logs</key>
+	<dict>
+		<key>BA13D428-856F-44F3-81E9-9A415EE582B3</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BA13D428-856F-44F3-81E9-9A415EE582B3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ExampleMVVM project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ExampleMVVM</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Testing project ExampleMVVM with scheme ExampleMVVM</string>
+			<key>timeStartedRecording</key>
+			<real>786069114.47549295</real>
+			<key>timeStoppedRecording</key>
+			<real>786069115.15921497</real>
+			<key>title</key>
+			<string>Testing project ExampleMVVM with scheme ExampleMVVM</string>
+			<key>uniqueIdentifier</key>
+			<string>BA13D428-856F-44F3-81E9-9A415EE582B3</string>
+		</dict>
+		<key>F4B22301-2D67-46EF-9D0A-0C6D880590E5</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F4B22301-2D67-46EF-9D0A-0C6D880590E5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ExampleMVVM project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ExampleMVVM</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Testing project ExampleMVVM with scheme ExampleMVVM</string>
+			<key>timeStartedRecording</key>
+			<real>786069164.47714496</real>
+			<key>timeStoppedRecording</key>
+			<real>786069164.93102098</real>
+			<key>title</key>
+			<string>Testing project ExampleMVVM with scheme ExampleMVVM</string>
+			<key>uniqueIdentifier</key>
+			<string>F4B22301-2D67-46EF-9D0A-0C6D880590E5</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

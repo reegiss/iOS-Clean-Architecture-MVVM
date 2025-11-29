@@ -1,0 +1,58 @@
+{
+  "main_library": {
+    "compatibility_versions": [
+      {
+        "version": "0"
+      }
+    ],
+    "current_versions": [
+      {
+        "version": "0"
+      }
+    ],
+    "exported_symbols": [
+      {
+        "data": {
+          "global": [
+            "_$sSo17OS_dispatch_queueC6Common17DispatchQueueTypeACWP",
+            "_$s6Common17DispatchQueueTypeTL",
+            "_$s6Common15ConnectionErrorMp",
+            "_$s6Common15ConnectionErrorPs0C0Tb",
+            "_$sSo17OS_dispatch_queueC6CommonE5async7executeyyyc_tF",
+            "_$ss5ErrorP6CommonE020isInternetConnectionA0Sbvg",
+            "_$s6Common11CancellableMp",
+            "_$s6Common17DispatchQueueTypeMp",
+            "_$s6Common15ConnectionErrorTL",
+            "_$sSo17OS_dispatch_queueC6Common17DispatchQueueTypeACMc",
+            "_$s6Common11CancellableTL",
+            "_$ss5ErrorP6CommonE020isInternetConnectionA0SbvpMV"
+          ]
+        }
+      }
+    ],
+    "flags": [
+      {
+        "attributes": [
+          "not_app_extension_safe"
+        ]
+      }
+    ],
+    "install_names": [
+      {
+        "name": "@rpath/Common_17A2E8D93C1D2F_PackageProduct.framework/Common_17A2E8D93C1D2F_PackageProduct"
+      }
+    ],
+    "swift_abi": [
+      {
+        "abi": 7
+      }
+    ],
+    "target_info": [
+      {
+        "min_deployment": "14",
+        "target": "arm64-ios-simulator"
+      }
+    ]
+  },
+  "tapi_tbd_version": 5
+}

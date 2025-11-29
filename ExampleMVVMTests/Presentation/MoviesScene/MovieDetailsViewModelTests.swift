@@ -1,5 +1,7 @@
 import XCTest
 @testable import ExampleMVVM
+@testable import Presentation
+@testable import Domain
 
 class MovieDetailsViewModelTests: XCTestCase {
     
@@ -7,7 +9,7 @@ class MovieDetailsViewModelTests: XCTestCase {
         case someError
     }
     
-    func test_updatePosterImageWithWidthEventReceived_thenImageWithThisWidthIsDownloaded() async {
+    func test_updatePosterImageWithWidthEventReceived_thenImageWithThisWidthIsDownloaded() async throws {
         // given
         let posterImagesRepository = PosterImagesRepositoryMock()
 

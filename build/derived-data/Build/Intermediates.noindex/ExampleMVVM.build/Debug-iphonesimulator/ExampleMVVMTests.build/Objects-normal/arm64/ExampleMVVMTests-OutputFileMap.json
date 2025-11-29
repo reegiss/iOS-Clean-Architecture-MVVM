@@ -1,0 +1,108 @@
+{
+  "" : {
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/ExampleMVVMTests-master.dia",
+    "emit-module-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/ExampleMVVMTests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/ExampleMVVMTests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/ExampleMVVMTests-master.swiftdeps"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Domain/UseCases/SearchMoviesUseCaseTests.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/SearchMoviesUseCaseTests.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/SearchMoviesUseCaseTests.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/SearchMoviesUseCaseTests.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/SearchMoviesUseCaseTests.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/SearchMoviesUseCaseTests.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/SearchMoviesUseCaseTests.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/SearchMoviesUseCaseTests.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/SearchMoviesUseCaseTests~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Infrastructure/Network/DataTransferServiceTests.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/DataTransferServiceTests.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/DataTransferServiceTests.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/DataTransferServiceTests.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/DataTransferServiceTests.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/DataTransferServiceTests.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/DataTransferServiceTests.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/DataTransferServiceTests.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/DataTransferServiceTests~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Infrastructure/Network/Mocks/NetworkConfigurableMock.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkConfigurableMock.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkConfigurableMock.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkConfigurableMock.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkConfigurableMock.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkConfigurableMock.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkConfigurableMock.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkConfigurableMock.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkConfigurableMock~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Infrastructure/Network/Mocks/NetworkSessionManagerMock.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkSessionManagerMock.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkSessionManagerMock.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkSessionManagerMock.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkSessionManagerMock.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkSessionManagerMock.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkSessionManagerMock.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkSessionManagerMock.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkSessionManagerMock~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Infrastructure/Network/NetworkServiceTests.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkServiceTests.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkServiceTests.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkServiceTests.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkServiceTests.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkServiceTests.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkServiceTests.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkServiceTests.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/NetworkServiceTests~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Presentation/MoviesScene/Mocks/MoviesQueriesRepositoryMock.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesQueriesRepositoryMock.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesQueriesRepositoryMock.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesQueriesRepositoryMock.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesQueriesRepositoryMock.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesQueriesRepositoryMock.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesQueriesRepositoryMock.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesQueriesRepositoryMock.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesQueriesRepositoryMock~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Presentation/MoviesScene/Mocks/PosterImagesRepositoryMock.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/PosterImagesRepositoryMock.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/PosterImagesRepositoryMock.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/PosterImagesRepositoryMock.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/PosterImagesRepositoryMock.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/PosterImagesRepositoryMock.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/PosterImagesRepositoryMock.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/PosterImagesRepositoryMock.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/PosterImagesRepositoryMock~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Presentation/MoviesScene/MovieDetailsViewModelTests.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MovieDetailsViewModelTests.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MovieDetailsViewModelTests.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MovieDetailsViewModelTests.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MovieDetailsViewModelTests.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MovieDetailsViewModelTests.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MovieDetailsViewModelTests.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MovieDetailsViewModelTests.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MovieDetailsViewModelTests~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Presentation/MoviesScene/MoviesListViewModelTests.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesListViewModelTests.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesListViewModelTests.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesListViewModelTests.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesListViewModelTests.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesListViewModelTests.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesListViewModelTests.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesListViewModelTests.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesListViewModelTests~partial.swiftmodule"
+  },
+  "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/ExampleMVVMTests/Presentation/MoviesScene/MoviesQueriesListViewModelTests.swift" : {
+    "const-values" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesQueriesListViewModelTests.swiftconstvalues",
+    "dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesQueriesListViewModelTests.d",
+    "diagnostics" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesQueriesListViewModelTests.dia",
+    "index-unit-output-path" : "/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesQueriesListViewModelTests.o",
+    "llvm-bc" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesQueriesListViewModelTests.bc",
+    "object" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesQueriesListViewModelTests.o",
+    "swift-dependencies" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesQueriesListViewModelTests.swiftdeps",
+    "swiftmodule" : "/Users/regis/develop/template/iOS-Clean-Architecture-MVVM/build/derived-data/Build/Intermediates.noindex/ExampleMVVM.build/Debug-iphonesimulator/ExampleMVVMTests.build/Objects-normal/arm64/MoviesQueriesListViewModelTests~partial.swiftmodule"
+  }
+}

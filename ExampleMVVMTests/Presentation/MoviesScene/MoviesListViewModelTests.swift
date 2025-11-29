@@ -1,5 +1,7 @@
 import XCTest
 @testable import ExampleMVVM
+@testable import Presentation
+@testable import Domain
 
 class MoviesListViewModelTests: XCTestCase {
     

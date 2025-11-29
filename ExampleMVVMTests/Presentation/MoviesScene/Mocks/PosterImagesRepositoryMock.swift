@@ -1,6 +1,7 @@
 import Foundation
 import XCTest
 @testable import ExampleMVVM
+import Domain
 
 class PosterImagesRepositoryMock: PosterImagesRepository {
     var completionCalls = 0
@@ -16,5 +17,4 @@ class PosterImagesRepositoryMock: PosterImagesRepository {
         }
         return image
     }
-}
 }

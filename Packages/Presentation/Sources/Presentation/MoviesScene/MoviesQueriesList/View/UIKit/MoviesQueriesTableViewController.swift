@@ -1,5 +1,7 @@
 import UIKit
 
+@objc(MoviesQueriesTableViewController)
+@objcMembers
 public final class MoviesQueriesTableViewController: UITableViewController, StoryboardInstantiable {
     
     private var viewModel: MoviesQueryListViewModel?
